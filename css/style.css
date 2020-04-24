@@ -1,0 +1,35 @@
+body {
+    font: Helvetica;
+    font-size: 18px;
+}
+
+header, nav, main, footer {
+    margin: 3rem auto;
+    max-width: 700px;
+}
+
+header, footer {
+    background-color: rgb(56, 56, 78);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+
+}
+
+.mainpicture {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.footerstyle {
+    color: #ffffff;
+}
+
+.lastupdate {
+    color: yellow;
+}
