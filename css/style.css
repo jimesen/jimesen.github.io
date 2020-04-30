@@ -9,7 +9,7 @@ header, nav, main, footer {
 
 header, footer {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(56, 56, 78);
+    background-color: #00001e;
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
@@ -31,5 +31,5 @@ h1 {
 }
 
 .lastupdate {
-    color: yellow;
+    color:  #FFA500;
 }
