@@ -1,5 +1,4 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
 }
 
@@ -9,6 +8,7 @@ header, nav, main, footer {
 }
 
 header, footer {
+    font-family: 'Ubuntu', sans-serif;
     background-color: rgb(56, 56, 78);
     padding: 1rem;
     border-radius: 10px;
@@ -16,7 +16,7 @@ header, footer {
 }
 
 h1 {
-    color: #ffffff;
+     color: #ffffff;
 
 }
 
