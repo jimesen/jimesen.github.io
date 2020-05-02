@@ -1,4 +1,7 @@
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     margin: auto;
     max-width: 950px;
     color: white;
@@ -9,13 +12,13 @@ header, nav, main, footer {
     width: 250px;
     height: auto;
     box-shadow: 0 0 30px #333;
-    float: left; 
+    float: left;
 }
 
 .picture2 {
     width: 250px;
     height: auto;
-    box-shadow: 0 0 30px #333; 
+    box-shadow: 0 0 30px #333;
     float: left;
 
 }
@@ -23,11 +26,12 @@ header, nav, main, footer {
 .picture3 {
     width: 250px;
     height: auto;
-    box-shadow: 0 0 30px #333; 
+    box-shadow: 0 0 30px #333;
     float: left;
 }
 
-header, footer {
+header,
+footer {
     font-family: 'Ubuntu', sans-serif;
     background-color: #00001e;
     padding: 1rem;
@@ -37,7 +41,7 @@ header, footer {
 
 h1 {
     font-size: 2.5em;
-    margin:0.15rem;
+    margin: 0.15rem;
     color: #D3D3D3;
 }
 
@@ -62,59 +66,61 @@ p {
 .footerstyle {
     color: #D3D3D3;
 }
+
 /* Small View **************************/
 main {
-	max-width: auto;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
 }
 
 main section h2 {
-	color: white;
-	font: Helvetica;
+    color: white;
+    font: Helvetica;
 }
 
 main section {
-	margin: 0.5rem;
-	border: 1px solid  #00001e;
-	padding: 0 1rem;
-	background-color: #FFA500;
+    margin: 0.5rem;
+    border: 1px solid #00001e;
+    padding: 0 1rem;
+    background-color: #FFA500;
 }
 
 
 /* Medium View ******************************/
 @media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
 
-	main section:nth-child(2) {
-		display: block;
-	}
+    main section:nth-child(2) {
+        display: block;
+    }
 
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
 
-	main section picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
+    main section picture {
+        display: block;
+    }
+
+    main section picture img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #bbb;
+    }
 }
 
 /* Large View ****************************/
 @media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-	main section:nth-child(3) {
-		grid-column: span 1;
-	}
+    main section:nth-child(3) {
+        grid-column: span 1;
+    }
 }
