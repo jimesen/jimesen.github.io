@@ -78,7 +78,7 @@ main {
 
 main section h2 {
     color: white;
-    font: Helvetica;
+    font-family: Helvetica;
 }
 
 main section {
