@@ -110,7 +110,7 @@ p {
 
 /* Small View **************************/
 main {
-    max-width: auto;
+    max-width: 375px;
     margin: 0 auto;
     font-size: 0.8rem;
 }
@@ -145,6 +145,9 @@ h2 {
 
 /* Medium View ******************************/
 @media only screen and (min-width: 37.5em) {
+    main {
+        max-width: 768px;
+    }
     nav ul {
         display: flex;
     }
@@ -169,6 +172,9 @@ h2 {
 
     /* Large View ****************************/
     @media only screen and (min-width: 60em) {
+        main {
+            max-width: 950px;
+        }
         nav a {
             font-size: 1.1rem;
         }
