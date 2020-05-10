@@ -53,8 +53,8 @@ footer {
 }
 
 .colorscheme {
-    width: 800px;
-    height: auto;
+    width: 330px;
+    height: 250px;
     box-shadow: 0 0 30px #999;
     border-radius: 0 10px 0 0;
     display: block;
@@ -103,7 +103,6 @@ p {
 }
 
 
-
 .footerstyle {
     color: #D3D3D3;
 }
@@ -126,6 +125,7 @@ main section {
     padding: 0 1rem;
     background-color: #FFA500;
 }
+
 
 h1 {
     font-size: 1em;
