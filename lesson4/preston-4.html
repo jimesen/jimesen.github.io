@@ -7,9 +7,7 @@
     <title>Predict My Outfit </title>
     <meta name="description" content="Site Plan to help define the outfit based on the weather">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
         rel="stylesheet">
 </head>
@@ -20,30 +18,42 @@
         </div>
         <h1>What should I wear today?</h1>
     </header>
-
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
-            <li><a href="#">Contact</a></li> 
+            <li><a href="..&#47;lesson3&#47;index.html" class="active">Home</a></li>
+            <li><a href="..&#47;lesson3&#47;target-audience.html">Target-Audience</a></li>
+            <li><a href="..&#47;lesson3&#47;color-scheme.html">Color-Scheme</a></li>
+            <li><a href="..&#47;lesson3&#47;typography.html">Typography</a></li>
+            <li><a href="#">&#10140; Preston Idaho</a></li>
+            <li><a href="..&#47;index.html">Main Site</a></li>
         </ul>
     </nav>
-    
-    
-<!-- CONTENT HERE -->
     <main>
-        <h1>Products</h1>
-        <p>The page name shoud almost exactly match the menu item. </p>
+        <h2>Preston Idaho</h2>
+        <section>
+            <p>Hero w/ weather summary</p>
+        </section>
+
+        <section>
+            <p>5 Day Forecast</p>
+        </section>
+
+        <section>
+            <p>Article</p>
+        </section>
+
+        <section>
+            <p>Contact Information</p>
+        </section>
     </main>
-    
-<!-- FOOTER HERE -->   
+
     <footer>
-        <p>&copy; 201x &bull; Paul Cheney &bull; 123-555-6789</p>
+        <p class="footerstyle"> &#169; <span id="year"></span> | Jeremy Mesen | San Jose, CR | <a href="https://www.byui.edu/online">BYUI
+            Online Learning</a> </p>
+    Today's Date: <span id="currentdate"></span>
     </footer>
-    
-<script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
