@@ -1,0 +1,112 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        max-height: 120px;
+        max-width: 120px;
+        float: left;
+    }
+
+    main {
+        max-width: 950px;
+    }
+
+    main section {
+        background-color: #FFA500;
+    }
+
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36454f+0,00001e+100 */
+        background: #36454f;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #36454f 0%, #00001e 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #36454f 0%, #00001e 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #36454f 0%, #00001e 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36454f', endColorstr='#00001e', GradientType=0);
+        /* IE6-9 */
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 33%;
+        margin-right: 5%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+        color: #FFA500;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: #00001e;
+    }
+
+    section #forecast-box {
+        display: grid;
+        width: 450px;
+        text-align: center;
+    }
+
+    #forecast-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+        margin: auto;
+    }
+
+    #forecast-box h3 {
+        padding: 15px;
+    }
+
+    .weather-images img {
+        height: 50px;
+    }
+
+    #map {
+        display: flex;
+        padding: 15px;
+        margin: auto;
+    }
+
+    #map-pic {
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    #google-maps {
+        display: block;
+        max-width: 100%;
+        height: 400px;
+        padding: 15px;
+    }
+
+    #article {
+        padding: 25px;
+
+    }
+
+    #store-image {
+        padding: 15px;
+
+    }
+}

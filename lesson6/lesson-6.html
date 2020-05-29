@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weatherability</title>
+    <meta name="description" content="This site helps you to be prepared to face the weather">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/smallstyle.css" rel="stylesheet">
+    <link href="css/mediumstyle.css" rel="stylesheet">
+    <link href="css/largestyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="pancakebanner" style="display:block;">
+            <span id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+                pavilion.</span>
+        </div>
+        <img src="images/iconfinder_10_1208025.png" alt="Logo image">
+        <h1>Weatherability</h1>
+        <p>Helps you to be prepared to face the weather</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href=# class="active">&#10140; Home</a></li>
+            <li><a href=#>Soda Springs</a></li>
+            <li><a href=#>Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href=#>Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <div class="herodiv">
+            <img src="images/weather.jpg" alt="Image">
+            <section class="stats">
+                <h2>Weather</h2>
+                <p>Currently: Strong winds and rain</p>
+                <p>Low: 12&#176;</p>
+                <p>Humidity: 80%</p>
+                <p>Visibility: Good</p>
+            </section>
+        </div>
+
+        <section id="forecast">
+            <div id="forecast-box">
+                <h3>Sun</h3>
+                <h3>Mon</h3>
+                <h3>Tue</h3>
+                <h3>Wed</h3>
+                <h3>Thu</h3>
+                <div class="weather-images">
+                    <img src="images/sunny.png" alt="Sunny">
+                    <p>90</p>
+                </div>
+                <div class="weather-images">
+                    <img src="images/partly_cloudy.png" alt="cloudy">
+                    <p>85</p>
+                </div>
+                <div class="weather-images">
+                    <img src="images/cloudy.png" alt="cloudy">
+                    <p>85</p>
+                </div>
+                <div class="weather-images">
+                    <img src="images/cloudy.png" alt="cloudy">
+                    <p>65</p>
+                </div>
+                <div class="weather-images">
+                    <img src="images/rainy.png" alt="rainy">
+                    <p>60</p>
+                </div>
+            </div>
+        </section>
+        <section id="article">
+            <h2>Weather</h2>
+            <img id="store-image" src="images/articlepic.jpg" alt="Articlepic">
+            <p>One of the first things you probably do every morning is look out the window to see what the weather is
+                like. Looking outside and listening to the day’s forecast helps you decide what clothes you will wear
+                and maybe even what you will do throughout the day. If you don’t have school and the weather looks
+                sunny, you might visit the zoo or go on a picnic. A rainy day might make you think about visiting a
+                museum or staying home to read.</p>
+
+            <p>The weather affects us in many ways. Day-to-day changes in weather can influence how we feel and the way
+                we look at the world. Severe weather, such as tornadoes, hurricanes, and blizzards, can disrupt many
+                people’s lives because of the destruction they cause.</p>
+
+            <p>The term “weather” refers to the temporary conditions of the atmosphere, the layer of air that surrounds
+                the Earth. We usually think of weather in terms of the state of the atmosphere in our own part of the
+                world. But weather works like dropping a pebble in water—the ripples eventually affect water far away
+                from where the pebble was dropped. The same happens with weather around the globe. Weather in your
+                region will eventually affect the weather hundreds or thousands of kilometers away. For example, a
+                snowstorm around Winnipeg, Manitoba, Canada, might eventually reach Chicago, Illinois, as it moves
+                southeast through the U.S.</p>
+
+            <p>Weather doesn’t just stay in one place. It moves, and changes from hour to hour or day to day. Over many
+                years, certain conditions become familiar weather in an area. The average weather in a specific region,
+                as well as its variations and extremes over many years, is called climate. For example, the city of Las
+                Vegas in the U.S. state of Nevada is generally dry and hot. Honolulu, the capital of the U.S. state of
+                Hawaii, is also hot, but much more humid and rainy.</p>
+
+            <p>Climate changes, just like weather. However, climate change can take hundreds or even thousands of years.
+                Today, the Sahara Desert in northern Africa is the largest desert in the world. However, several
+                thousand years ago, the climate in the Sahara was quite different. This “Green Sahara” experienced
+                frequent rainy weather. </p>
+        </section>
+        <section id="map">
+            <div id="map-pic">
+                <div id="map-info">
+                    <h2>Weatherability</h2>
+                    <h3> W 1st N St.</h3>
+                    <h3>Preston, Idaho</h3>
+                    <h3>(123) 123 - 1234</h3>
+                </div>
+                <img id="google-maps" src="images/map.jpg" alt="Map">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
+        Today's Date: <span id="today"></span>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
