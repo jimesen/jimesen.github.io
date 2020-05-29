@@ -51,7 +51,6 @@ footer {
 
 main section {
     margin: 0.5rem;
-    border: 1px solid #00001e;
     padding: 0 1rem;
     background-color: #FFA500;
 }
@@ -82,7 +81,7 @@ p {
 main {
     max-width: 375px;
     margin: 0 auto;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 
