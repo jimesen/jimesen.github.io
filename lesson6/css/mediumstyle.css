@@ -49,6 +49,18 @@
         padding: .6rem 1rem;
         color: #FFA500;
     }
+    #forecast-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+        margin: auto;
+    }
 
+    #forecast-box h3 {
+        padding: 15px;
+    }
+    #google-maps h2, h3{
+        color: #00001e;
+     }
 }
 

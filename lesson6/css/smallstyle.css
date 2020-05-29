@@ -189,6 +189,9 @@ section #forecast-box {
     margin-right: auto;
     max-width: 100%;
 }
+#google-maps h2, h3{
+    color: #00001e;
+ }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
