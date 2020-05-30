@@ -1,13 +1,9 @@
-(function () {
-    var High = document.getElementById('High').innerHTML;
-    var wind = document.getElementById('wind').innerHTML;
-    let windChill = 35.74 + (0.6215 * High) - (35.75 * (wind ** .16)) + (0.4275 * High * (wind ** .16));
-    
-
-    if (High <= 50 && wind > 3) {
-       windChill = Math.round(windChill);
-    } else {
-       windChill = "NA";
-    }
-    document.getElementById('windChill').innerHTML = windChill;
-  }());
+var h = document.getElementById('h').innerHTML;
+var w = document.getElementById('w').innerHTML;
+let wc = 35.74+(0.6215*h)-(35.75*(w**0.16))+(0.4275*h*(w**.16));
+if (h <= 50 && w > 3) {
+   wc = Math.round(wc);
+} else {
+   wc = "NA";
+}
+document.getElementById('wC').innerHTML = wc;
