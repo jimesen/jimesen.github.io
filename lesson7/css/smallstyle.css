@@ -1,0 +1,119 @@
+/*----- Structure Template -----*/
+main,
+footer {
+    margin: auto;
+
+    color: #00001e;
+    text-align: justify;
+}
+
+header,
+footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #00001e;
+    padding: 1rem;
+    text-align: center;
+    color: #D3D3D3;
+}
+
+header img {
+    max-height: 120px;
+    max-width: 120px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1,
+p {
+    margin: 0;
+    padding-top: 1rem;
+    color: #D3D3D3;
+}
+
+/*----- Banner at the top -----*/
+#pancakebanner {
+    background-color: #FFA500;
+    color: #00001e;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*----- Nav Menu -----*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #FFA500;
+    /*color del boton*/
+}
+
+nav {
+    background-color: #00001e;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFA500;
+    /*color de las letras del titulo*/
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+    background-color: rgba(138, 95, 30, 0.4);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----- Images Small View -----*/
+.caption {
+    font-family: 'Ubuntu', sans-serif;
+    color: #00001e;
+    text-align: center;
+}
+
+.lazy-load {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.lazy-load--item {
+    margin: 2rem;
+    border: 5px solid rgb(228, 235, 238);
+    border-radius: 2px;
+    box-shadow: 0 0 30px rgb(56, 245, 150);
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
