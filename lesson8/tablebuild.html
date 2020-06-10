@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>LazyLoad</title>
-  <meta name="description" content="SimpleLazyLoad Website">
+  <title>TableBuild</title>
+  <meta name="description" content="Simple table">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
@@ -14,11 +14,14 @@
 
 <body>
   <section class="invoice">
-  <header>
-    <h1>ACME Wildwest</h1>
-  </header>
+  
   <table>
     <thead>
+      <tr>
+        <th>
+            <th>ACME Wildwest</th>
+        </th>
+      </tr>
       <tr>
         <th>Period</th>
         <th>Sales</th>
@@ -56,8 +59,13 @@
         <td>$7,500</td>
       </tr>
     </tbody>
+  <tfoot>
+      <tr>
+          <td colspan="3">Compiled 06.09.2020 by jMesen</td>
+      </tr>
+  </tfoot>
   </table>
-  <h3>Compiled 06.09.2020 by jMesen</h3>
+
 </section>
 </body>
 

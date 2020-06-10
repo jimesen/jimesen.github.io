@@ -10,6 +10,16 @@ body {
   margin: 100px auto;
   width: 600px;
 }
+/*----- Titulo y Final  -----*/
+thead tr:first-child {
+    background-color: #7fb9c2;
+    font-size: 1.75em;
+}
+thead tr:last-child {
+    background-color: #628ca6;
+    color: white;
+    font-size: 1.10em;
+}
 /*----- Estructura de tabla -----*/
 table {
 	border-collapse: separate;
@@ -21,13 +31,12 @@ table {
   /*----- Bordes Columnas -----*/
   table tr th,
   table tr td {
-	border-right: 1px solid #bbb;
-	border-bottom: 1px solid #bbb;
-	box-shadow: 2px 2px 1px #e5dfcc;
+    border: 2px solid #cfcfcf;
+    border-collapse: collapse;
   }
 /*----- Tamano Columnas -----*/
 th, td{
-	padding: 15px 30px;
+	padding: 10px;
   }
 
 /*----- Color titulo -----*/
