@@ -16,7 +16,8 @@ caption {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
-    box-shadow: 10px 10px 15px #5e9097;  
+	box-shadow: 10px 10px 15px #5e9097;
+	border: 2px solid #cfcfcf; 
  }
 /*----- Titulo y Final  -----*/
 thead tr:first-child {
