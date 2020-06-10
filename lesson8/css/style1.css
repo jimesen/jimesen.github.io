@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic);
+
+body {
+  margin: 30px;
+  background: #ECEAE3;
+  font-family: Ubuntu, sans-serif;
+}
+/*----- Centrado Tabla-----*/
+.invoice {
+  margin: 100px auto;
+  width: 600px;
+}
+/*----- Tamano Columnas -----*/
+th, td{
+  padding: 15px 30px;
+}
+/*----- Color Encabezado -----*/
+th{
+  background: rgb(25, 218, 208);
+  color: #111;
+}
+/*----- Color Fondo Tabla -----*/
+td{
+  background: #EFF1F6;
+}
+/*----- Estructura de tabla -----*/
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+/*----- Bordes Columnas -----*/
+table tr th,
+table tr td {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  box-shadow: 2px 2px 1px #e5dfcc;
+}
+
+
+
+
