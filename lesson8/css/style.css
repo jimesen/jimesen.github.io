@@ -54,6 +54,10 @@ thead{
 tr:nth-child(even){
 	background-color: rgba(155, 248, 212, 0.404);
 }
+tr:nth-child(4) td:nth-child(3) {
+    background-color: #628CA6;
+    color: white;
+ }
 /*----- Hover -----*/
 tr:hover td{
 	background-color: #369681;
