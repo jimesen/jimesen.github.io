@@ -10,6 +10,14 @@ body {
   margin: 100px auto;
   width: 600px;
 }
+
+caption {
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 10px 10px 15px #5e9097;  
+ }
 /*----- Titulo y Final  -----*/
 thead tr:first-child {
     background-color: #7fb9c2;
@@ -27,6 +35,7 @@ table {
 	background-color: rgba(114, 167, 197, 0.747);
 	text-align: center;
 	width: 100%;
+	box-shadow: 10px 10px 15px #5e9097
   }
   /*----- Bordes Columnas -----*/
   table tr th,
