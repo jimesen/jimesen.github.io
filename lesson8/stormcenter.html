@@ -41,10 +41,14 @@
       <h3>Storm Center</h3>
       <fieldset>
         <legend>Reporter's Information</legend>
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-        <input placeholder="Zip Code" type="number" tabindex="4" required>
+        <label class="top">Name
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus></label>
+        <label class="top">Email Address
+        <input placeholder="Your Email Address" type="email" tabindex="2" required></label>
+        <label class="top">Phone Number
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required></label>
+        <label class="top">Zip Code
+        <input placeholder="Zip Code" type="number" tabindex="4" required></label>
       </fieldset>
       <fieldset>
         <legend>Storm Information</legend>
@@ -78,7 +82,10 @@
         <label><input type="radio" name="danger" id="danger1" value="Yes"> Yes</label>
         <label><input type="radio" name="danger" id="danger2" value="No"> No</label>
         <label><input type="radio" name="danger" id="danger3" value="Maybe"> Maybe</label>
-        <textarea placeholder="Additional Info" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <label class="top">Additional Information
+        <textarea placeholder="Additional Info" tabindex="5" required></textarea></label>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
