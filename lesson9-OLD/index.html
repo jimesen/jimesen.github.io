@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Weatherability</title>
+  <meta name="description" content="This site helps you to be prepared to face the weather">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/smallstyle.css" rel="stylesheet">
+  <link href="css/mediumstyle.css" rel="stylesheet">
+  <link href="css/largestyle.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="pancakebanner" style="display:block;">
+      <span id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+        pavilion.</span>
+    </div>
+    <img class="logo" src="images/iconfinder_10_1208025.png" alt="Logo image">
+    <section class="header-text">
+      <h1>Weatherability</h1>
+      <div class="titulo">Helps you to be prepared to face the weather</div>
+    </section>
+  </header>
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href=# class="active">Home</a></li>
+      <li><a href=# class="active">Preston</a></li>
+      <li><a href=#>Soda Springs</a></li>
+      <li><a href=#>Fish Haven</a></li>
+      <li><a href="#">&#10140; Storm Center</a></li>
+      <li><a href=#>Gallery</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <form id="contact" method="post">
+      <h3>Storm Center</h3>
+      <fieldset>
+        <legend>Reporter's Information</legend>
+        <label class="top">Name
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus></label>
+        <label class="top">Email Address
+        <input placeholder="Your Email Address" type="email" tabindex="2" required></label>
+        <label class="top">Phone Number
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required></label>
+        <label class="top">Zip Code
+        <input placeholder="Zip Code" type="number" tabindex="4" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date <input type="date" name="completeDate"></label>
+        <label class="top">Storm Type
+          <input type="text" list="stormtypes">
+          <datalist id="stormtypes">
+            <option value="Flash flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+        </label>
+        <label class="top">Storm Severity = <span id="ratingvalue">5</span>
+          <input id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        </label>
+        <label class="top">Storm Region
+          <select name="region">
+            <option value="">Select Region</option>
+            <option value="fish haven">Fish Haven</option>
+            <option value="preston">Preston</option>
+            <option value="soda spring">Soda Springs</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Danger and Additional Information</legend>
+        <div>User In Danger?</div>
+        <label><input type="radio" name="danger" id="danger1" value="Yes"> Yes</label>
+        <label><input type="radio" name="danger" id="danger2" value="No"> No</label>
+        <label><input type="radio" name="danger" id="danger3" value="Maybe"> Maybe</label>
+      </fieldset>
+      <fieldset>
+        <label class="top">Additional Information
+        <textarea placeholder="Additional Info" tabindex="5" required></textarea></label>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+
+
+  </div>
+  <footer>
+    <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
+    Today's Date: <span id="today"></span>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/storm.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfotload.js"></script>
+  <script src="js/lazyload.js"></script>
+</body>
+
+</html>

@@ -47,12 +47,25 @@
         color: #FFA500;
     }
 
-    /*----- Images Small View -----*/
-    .lazy-load {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+/*----- Index Page -----*/
+div.Town{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+ }
+ div.Town section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+ 
+ section:nth-child(even) img{
+    grid-column: 2;
+ }
+ section:nth-child(even) .townData{
+    grid-column: 1;
+    grid-row: 1;
+ }
 
-    .lazy-load :hover {
-        box-shadow: 0 0 25px #FFA500;
-    }
 }

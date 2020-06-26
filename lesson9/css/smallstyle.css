@@ -96,155 +96,40 @@ nav ul.hide {
     display: none;
 }
 
-/*----- Form -----*/
+/*----- Index Page -----*/
 
-body {
-    font-family: Ububtu, sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 30px;
-    color: rgb(5, 5, 5);
-
-}
-
-.container {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="number"],
-#contact textarea,
-#contact button[type="submit"] {
-    font-family: Ubuntu, sans-serif;
-}
-
-#contact {
-    background: rgba(255, 166, 0, 0.582);
-    padding: 25px;
-    margin: 50px 0;
-}
-
-#contact h3 {
+h3 {
+    font-family: 'Ubuntu', sans-serif;
     color: #00001e;
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 400;
     text-align: center;
-    margin: 0 0 10px;
+    font-size: 1.5em;
 }
 
-#contact legend {
-    display: block;
-    font-size: 1.3rem;
-}
 
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
-
-label {
-    font-size: 1rem;
-}
-
-form label.top input,
-form label.top select,
-form label.top textarea {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(148, 139, 68, 0.1);
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="number"],
-#contact textarea {
-    width: 100%;
-    border: 1px solid #CCC;
-    background: #FFF;
-    margin: 0 0 5px;
+div.Town{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    text-align: center;
+ }
+ div.Town section{
     padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="number"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid #AAA;
-}
-
-#contact textarea {
-    height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffa60067;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+ div.citiesData p:nth-of-type(1){
+    font-family: 'Ubuntu', sans-serif;
+ }
+ div.Town img{
+    display: block;
     max-width: 100%;
-    resize: none;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #00001e;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-    background: #09C;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    outline: 0;
-    border: 1px solid #999;
-}
-
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
-}
-
-
-/*----- Slider-----*/
-
+    height: auto;
+    margin: 0 auto;
+ 
+ }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
