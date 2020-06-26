@@ -1,19 +1,14 @@
 @media only screen and (min-width: 60em) {
-    header img {
-        max-height: 120px;
-        max-width: 120px;
-        float: left;
-    }
+    /*----- Structure Template -----*/
 
     main {
         max-width: 950px;
+        margin: auto;
+
     }
 
-    main section {
-        background-color: #FFA500;
-    }
-
-    nav {
+      /*----- Nav Menu -----*/
+      nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36454f+0,00001e+100 */
         background: #36454f;
         /* Old browsers */
@@ -36,8 +31,8 @@
     }
 
     nav ul {
-        margin-left: 33%;
-        margin-right: 5%;
+        margin-left: 25%;
+
     }
 
     nav ul li {

@@ -1,38 +1,47 @@
+/*----- Structure Template -----*/
+* {
+    box-sizing: border-box;
+}
+
 main,
 footer {
     margin: auto;
-    max-width: 950px;
-    color: white;
+    color: #00001e;
     text-align: justify;
 }
 
-#pancakebanner {
-    background-color: #FFA500;
-    color: #00001e;
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header,
 footer {
     font-family: 'Ubuntu', sans-serif;
     background-color: #00001e;
     padding: 1rem;
     text-align: center;
+    color: #D3D3D3;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #00001e;
+    padding: 10px 0px;
+
 }
 
 header img {
-    max-height: 120px;
-    max-width: 120px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90px;
+    height: auto;
 }
 
-header h1 {
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1,
+.titulo {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    padding-top: 1rem;
+    color: #D3D3D3;
 }
 
 header p {
@@ -72,6 +81,7 @@ p {
     font-family: sans-serif;
     font-size: medium;
     text-align: center;
+    color: white;
 }
 
 .footerstyle {
@@ -93,6 +103,8 @@ main section h2 {
 h2 {
     font-size: 2rem;
 }
+
+/*----- Nav Menu -----*/
 
 nav button {
     margin: .2rem 2%;

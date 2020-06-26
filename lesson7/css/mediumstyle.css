@@ -1,15 +1,11 @@
 @media only screen and (min-width: 37.5em) {
-
     /*----- Structure Template -----*/
-    header img {
-        max-height: 120px;
-        max-width: 120px;
-        float: left;
+    main {
+        max-width: 650px;
     }
 
-    main {
-        margin-left: 8%;
-        max-width: 650px;
+    header {
+        justify-content: center;
     }
 
     /*----- Nav Menu -----*/
@@ -36,7 +32,7 @@
     }
 
     nav ul {
-        margin-left: 8%;
+        margin-left: 3%;
     }
 
     nav ul li {
@@ -49,6 +45,7 @@
         padding: .6rem 1rem;
         color: #FFA500;
     }
+
 
     /*----- Images Small View -----*/
     .lazy-load {

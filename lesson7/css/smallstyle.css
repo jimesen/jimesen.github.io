@@ -1,13 +1,15 @@
 /*----- Structure Template -----*/
+* {
+    box-sizing: border-box;
+}
+
 main,
 footer {
     margin: auto;
-
     color: #00001e;
     text-align: justify;
 }
 
-header,
 footer {
     font-family: 'Ubuntu', sans-serif;
     background-color: #00001e;
@@ -16,18 +18,29 @@ footer {
     color: #D3D3D3;
 }
 
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #00001e;
+    padding: 10px 0px;
+
+}
+
 header img {
-    max-height: 120px;
-    max-width: 120px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90px;
+    height: auto;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
 }
 
 header h1,
-p {
+.titulo {
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    padding-top: 1rem;
     color: #D3D3D3;
 }
 
