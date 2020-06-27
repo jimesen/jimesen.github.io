@@ -104,6 +104,15 @@ h2 {
     font-size: 2rem;
 }
 
+/*----- Banner at the top -----*/
+#pancakebanner {
+    background-color: #FFA500;
+    color: #00001e;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
 /*----- Nav Menu -----*/
 
 nav button {
