@@ -1,5 +1,4 @@
 @media only screen and (min-width: 60em) {
-
     /*----- Structure Template -----*/
 
     main {
@@ -8,8 +7,8 @@
 
     }
 
-    /*----- Nav Menu -----*/
-    nav {
+      /*----- Nav Menu -----*/
+      nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36454f+0,00001e+100 */
         background: #36454f;
         /* Old browsers */
@@ -47,12 +46,67 @@
         color: #FFA500;
     }
 
-    /*----- Images Small View -----*/
-    .lazy-load {
-        grid-template-columns: 1fr 1fr 1fr;
+    h1 {
+        font-size: 2.5em;
     }
 
-    .lazy-load :hover {
-        box-shadow: 0 0 25px #FFA500;
+    h2 {
+        font-size: 2.5rem;
+        color: #00001e;
+    }
+
+    section #forecast-box {
+        display: grid;
+        width: 450px;
+        text-align: center;
+        color: #00001e;
+    }
+
+    #forecast-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 20px;
+        margin: auto;
+    }
+
+    #forecast-box h3 {
+        padding: 15px;
+    }
+
+    .weather-images img {
+        height: 50px;
+    }
+
+    #map {
+        display: flex;
+        padding: 15px;
+        margin: auto;
+    }
+
+    #map-pic {
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    #google-maps {
+        display: block;
+        max-width: 100%;
+        height: 400px;
+        padding: 15px;
+    }
+
+    #google-maps h2, h3{
+       color: #00001e;
+    }
+
+    #article {
+        padding: 25px;
+
+    }
+
+    #store-image {
+        padding: 15px;
+
     }
 }
