@@ -50,6 +50,7 @@ h2 {
     text-shadow: 3px 3px 5px #777;
     margin: 0;
     font-size: 2rem;
+    padding-top: 5%;
 }
 
 /*----- Banner at the top -----*/
@@ -116,6 +117,7 @@ nav ul.hide {
 .herodiv {
     position: relative;
 }
+
 /*Transparencia del cuadro flotante*/
 .stats {
     position: absolute;
@@ -124,21 +126,22 @@ nav ul.hide {
     background: radial-gradient(#FFA500, #00001e41);
     box-shadow: 0 0 25px #00001e;
     opacity: .8;
-    font-size: .5rem;
-    padding: 1%;
+
 }
+
 /*Titulo dentro del cuadro*/
 .stats h3 {
     text-align: center;
     text-shadow: 3px 3px 5px #777;
     color: #fff;
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
+
 /*Info dentro del cuadro*/
 .stats p {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #fff;
     text-align: left;
 }
@@ -153,6 +156,7 @@ section #forecast-box {
     margin: 20px;
     margin-top: auto;
 }
+
 /*Imagen dentro del articulo*/
 #store-image {
     display: block;
@@ -162,13 +166,13 @@ section #forecast-box {
 
 /*----- Location -----*/
 #google-maps {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+    display: none;
 }
-#google-maps h2, h3{
+
+#google-maps h2,
+h3 {
     color: #00001e;
- }
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

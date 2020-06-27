@@ -10,134 +10,156 @@
     <link href="css/smallstyle.css" rel="stylesheet">
     <link href="css/mediumstyle.css" rel="stylesheet">
     <link href="css/largestyle.css" rel="stylesheet">
- </head>
+</head>
 
- <body>
-     <div id="pancakebanner" style="display:block;">
+<body>
+    <div id="pancakebanner" style="display:block;">
         <span id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
-          pavilion.</span>
-      </div>
+            pavilion.</span>
+    </div>
     <header>
-      <img class="logo" src="images/iconfinder_10_1208025.png" alt="Logo image">
-      <section class="header-text">
-        <h1>Weatherability</h1>
-        <div class="titulo">Helps you to be prepared to face the weather</div>
-      </section>
+        <img class="logo" src="images/iconfinder_10_1208025.png" alt="Logo image">
+        <section class="header-text">
+            <h1>Weatherability</h1>
+            <div class="titulo">Helps you to be prepared to face the weather</div>
+        </section>
     </header>
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
-            <li><a href=/lesson9/index.html>Home</a></li>
-            <li><a href=/lesson6/lesson-6.html class="active">&#10140; Preston</a></li>
+            <li><a href=/lesson9/index.html>Home </a> </li> 
+            <li><a href=/lesson10/preston-10.html class="active">&#10140; Preston</a></li>
             <li><a href=#>Soda Springs</a></li>
             <li><a href=#>Fish Haven</a></li>
-            <li><a href=/lesson8/stormcenter.html>Storm Center</a></li>
-            <li><a href=/lesson7/gallery-7.html>Gallery</a></li>
-        </ul>
-    </nav>
+            <li><a href=/lesson8/stormcenter.html>Storm Center</a></li> 
+            <li><a href=/lesson7/gallery-7.html>Gallery</a></li> 
+        </ul> 
+    </nav> 
     <main>
-        <h2>Preston Idaho</h2>
+                        <h2>Preston Idaho</h2>
 
-        <div class="herodiv">
-            <img src="images/weather.jpg" alt="Image" sizes="100vw"
-            srcset="images/small.jpg 400w,
+                        <div class="herodiv">
+                            <img src="images/weather.jpg" alt="Image" sizes="100vw" srcset="images/small.jpg 400w,
                     images/medium.jpg 800w,
-                    images/large.jpg 1100w"    
-     >
+                    images/large.jpg 1100w">
 
-            <section class="stats">
-                <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>Humidity: 52%</p>
-                <p>High: <span id="h">35</span>&#8457;</p>
-                <p>Wind Speed: <span id="w">16</span> mph</p>
-                <p>Wind Chill: <span id="wC"></span>&#8457;</p>
-            </section>
-        </div>
+                            <section class="stats">
+                                <h3>Weather Summary</h3>
+                                <p>Currently: Sunny</p>
+                                <p>Humidity: 52%</p>
+                                <p>High: <span id="h">35</span>&#8457;</p>
+                                <p>Wind Speed: <span id="w">16</span> mph</p>
+                                <p>Wind Chill: <span id="wC"></span>&#8457;</p>
+                            </section>
+                        </div>
 
-        <section id="forecast">
-            <div id="forecast-box">
-                <h3>Sun</h3>
-                <h3>Mon</h3>
-                <h3>Tue</h3>
-                <h3>Wed</h3>
-                <h3>Thu</h3>
-                <div class="weather-images">
-                    <img src="images/sunny.png" alt="Sunny">
-                    <p>90</p>
-                </div>
-                <div class="weather-images">
-                    <img src="images/partly_cloudy.png" alt="cloudy">
-                    <p>85</p>
-                </div>
-                <div class="weather-images">
-                    <img src="images/cloudy.png" alt="cloudy">
-                    <p>85</p>
-                </div>
-                <div class="weather-images">
-                    <img src="images/cloudy.png" alt="cloudy">
-                    <p>65</p>
-                </div>
-                <div class="weather-images">
-                    <img src="images/rainy.png" alt="rainy">
-                    <p>60</p>
-                </div>
-            </div>
-        </section>
-        <section id="article">
-            <h2>Weather</h2>
-            <img id="store-image" src="images/articlepic.jpg" alt="Articlepic">
-            <p>One of the first things you probably do every morning is look out the window to see what the weather is
-                like. Looking outside and listening to the day’s forecast helps you decide what clothes you will wear
-                and maybe even what you will do throughout the day. If you don’t have school and the weather looks
-                sunny, you might visit the zoo or go on a picnic. A rainy day might make you think about visiting a
-                museum or staying home to read.</p>
 
-            <p>The weather affects us in many ways. Day-to-day changes in weather can influence how we feel and the way
-                we look at the world. Severe weather, such as tornadoes, hurricanes, and blizzards, can disrupt many
-                people’s lives because of the destruction they cause.</p>
 
-            <p>The term “weather” refers to the temporary conditions of the atmosphere, the layer of air that surrounds
-                the Earth. We usually think of weather in terms of the state of the atmosphere in our own part of the
-                world. But weather works like dropping a pebble in water—the ripples eventually affect water far away
-                from where the pebble was dropped. The same happens with weather around the globe. Weather in your
-                region will eventually affect the weather hundreds or thousands of kilometers away. For example, a
-                snowstorm around Winnipeg, Manitoba, Canada, might eventually reach Chicago, Illinois, as it moves
-                southeast through the U.S.</p>
+                        <section id="forecast">
+                            <h2>5 days forecast</h2>
+                            <div id="forecast-box">
+                                <h3><span id='day1'></span>.</h3>
+                                <h3><span id='day2'></span>.</h3>
+                                <h3><span id='day3'></span>.</h3>
+                                <h3><span id='day4'></span>.</h3>
+                                <h3><span id='day5'></span>.</h3>
+                                <div class="weather-images">
+                                    <img id="imagesrc1" src="#" alt="ForecastIcon1">
+                                    <p><span id="forecast1"></span>°F</p>
+                                </div>
+                                <div class="weather-images">
+                                    <img id="imagesrc2" src="#" alt="ForecastIcon2">
+                                    <p><span id="forecast2"></span>°F</p>
+                                </div>
+                                <div class="weather-images">
+                                    <img id="imagesrc3" src="#" alt="ForecastIcon3">
+                                    <p><span id="forecast3"></span>°F</p>
+                                </div>
+                                <div class="weather-images">
+                                    <img id="imagesrc4" src="#" alt="ForecastIcon4">
+                                    <p><span id="forecast4"></span>°F</p>
+                                </div>
+                                <div class="weather-images">
+                                    <img id="imagesrc5" src="#" alt="ForecastIcon5">
+                                    <p><span id="forecast5"></span>°F</p>
+                                </div>
 
-            <p>Weather doesn’t just stay in one place. It moves, and changes from hour to hour or day to day. Over many
-                years, certain conditions become familiar weather in an area. The average weather in a specific region,
-                as well as its variations and extremes over many years, is called climate. For example, the city of Las
-                Vegas in the U.S. state of Nevada is generally dry and hot. Honolulu, the capital of the U.S. state of
-                Hawaii, is also hot, but much more humid and rainy.</p>
+                            </div>
+                        </section>
+                        <section id="article">
+                            <h2>Weather</h2>
+                            <img id="store-image" src="images/articlepic.jpg" alt="Articlepic">
+                            <p>One of the first things you probably do every morning is look out the window to see what
+                                the weather is
+                                like. Looking outside and listening to the day’s forecast helps you decide what clothes
+                                you will wear
+                                and maybe even what you will do throughout the day. If you don’t have school and the
+                                weather looks
+                                sunny, you might visit the zoo or go on a picnic. A rainy day might make you think about
+                                visiting a
+                                museum or staying home to read.</p>
 
-            <p>Climate changes, just like weather. However, climate change can take hundreds or even thousands of years.
-                Today, the Sahara Desert in northern Africa is the largest desert in the world. However, several
-                thousand years ago, the climate in the Sahara was quite different. This “Green Sahara” experienced
-                frequent rainy weather. </p>
-        </section>
-        <section id="map">
-            <div id="map-pic">
-                <div id="map-info">
-                    <h2>Weatherability</h2>
-                    <h3> W 1st N St.</h3>
-                    <h3>Preston, Idaho</h3>
-                    <h3>(123) 123 - 1234</h3>
-                </div>
-                <img id="google-maps" src="images/map.jpg" alt="Map">
-            </div>
-        </section>
+                            <p>The weather affects us in many ways. Day-to-day changes in weather can influence how we
+                                feel and the way
+                                we look at the world. Severe weather, such as tornadoes, hurricanes, and blizzards, can
+                                disrupt many
+                                people’s lives because of the destruction they cause.</p>
 
-    </main>
+                            <p>The term “weather” refers to the temporary conditions of the atmosphere, the layer of air
+                                that surrounds
+                                the Earth. We usually think of weather in terms of the state of the atmosphere in our
+                                own part of the
+                                world. But weather works like dropping a pebble in water—the ripples eventually affect
+                                water far away
+                                from where the pebble was dropped. The same happens with weather around the globe.
+                                Weather in your
+                                region will eventually affect the weather hundreds or thousands of kilometers away. For
+                                example, a
+                                snowstorm around Winnipeg, Manitoba, Canada, might eventually reach Chicago, Illinois,
+                                as it moves
+                                southeast through the U.S.</p>
 
-    <footer>
-        <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
-        Today's Date: <span id="today"></span>
-    </footer>
-    <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webfotload.js"></script>
+                            <p>Weather doesn’t just stay in one place. It moves, and changes from hour to hour or day to
+                                day. Over many
+                                years, certain conditions become familiar weather in an area. The average weather in a
+                                specific region,
+                                as well as its variations and extremes over many years, is called climate. For example,
+                                the city of Las
+                                Vegas in the U.S. state of Nevada is generally dry and hot. Honolulu, the capital of the
+                                U.S. state of
+                                Hawaii, is also hot, but much more humid and rainy.</p>
+
+                            <p>Climate changes, just like weather. However, climate change can take hundreds or even
+                                thousands of years.
+                                Today, the Sahara Desert in northern Africa is the largest desert in the world. However,
+                                several
+                                thousand years ago, the climate in the Sahara was quite different. This “Green Sahara”
+                                experienced
+                                frequent rainy weather. </p>
+                        </section>
+                        <section id="map">
+                            <div id="map-pic">
+                                <div id="map-info">
+                                    <h2>Weatherability</h2>
+                                    <h3> W 1st N St.</h3>
+                                    <h3>Preston, Idaho</h3>
+                                    <h3>(123) 123 - 1234</h3>
+                                </div>
+                                <img id="google-maps" src="images/map.jpg" alt="Map">
+                            </div>
+                        </section>
+
+                        </main>
+
+                        <footer>
+                            <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
+                            Today's Date: <span id="today"></span>
+                        </footer>
+                        <script src="js/scripts.js"></script>
+                        <script src="js/windchill.js"></script>
+                        <script src="js/forecast.js"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                        <script src="js/webfotload.js"></script>
 </body>
 
 </html>
