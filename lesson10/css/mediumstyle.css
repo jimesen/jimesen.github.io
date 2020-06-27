@@ -45,6 +45,8 @@ nav ul li a {
     padding: .6rem 1rem;
     color: #FFA500;
 }
+
+/*----- Forecast -----*/
     #forecast-box {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
@@ -55,6 +57,8 @@ nav ul li a {
     #forecast-box h3 {
         padding: 15px;
     }
+
+  /*----- Location -----*/  
     #google-maps h2, h3{
         color: #00001e;
      }

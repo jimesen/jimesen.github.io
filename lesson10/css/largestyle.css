@@ -4,11 +4,14 @@
     main {
         max-width: 950px;
         margin: auto;
-
+    }
+    h1, h2 {
+        font-size: 2.5rem;
+        color: #00001e;
     }
 
-      /*----- Nav Menu -----*/
-      nav {
+    /*----- Nav Menu -----*/
+    nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36454f+0,00001e+100 */
         background: #36454f;
         /* Old browsers */
@@ -46,14 +49,7 @@
         color: #FFA500;
     }
 
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        color: #00001e;
-    }
+    /*----- Forecast -----*/
 
     section #forecast-box {
         display: grid;
@@ -77,8 +73,10 @@
         height: 50px;
     }
 
+/*----- Location -----*/
+
     #map {
-        display: flex;
+        display: block;
         padding: 15px;
         margin: auto;
     }
@@ -96,17 +94,10 @@
         padding: 15px;
     }
 
-    #google-maps h2, h3{
-       color: #00001e;
-    }
-
-    #article {
-        padding: 25px;
-
-    }
-
+/*Imagen dentro del articulo*/
     #store-image {
-        padding: 15px;
-
-    }
+    height: 350px;
+    float: left;
+    padding: 2%;
+}
 }
