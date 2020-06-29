@@ -1,0 +1,121 @@
+@media only screen and (min-width: 60em) {
+    /*----- Structure Template -----*/
+
+    main {
+        max-width: 950px;
+        margin: auto;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.5rem;
+        color: #00001e;
+    }
+
+    /*----- Nav Menu -----*/
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#36454f+0,00001e+100 */
+        background: #36454f;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #36454f 0%, #00001e 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #36454f 0%, #00001e 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #36454f 0%, #00001e 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36454f', endColorstr='#00001e', GradientType=0);
+        /* IE6-9 */
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 25%;
+
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+        color: #FFA500;
+    }
+
+    /*Transparencia del cuadro flotante*/
+    .stats {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        padding: 1%;
+    }
+
+    /*Titulo dentro del cuadro*/
+    .stats h3 {
+        font-size: 1.6rem;
+    }
+
+    /*Info dentro del cuadro*/
+    .stats p {
+        font-size: 1rem;
+    }
+
+    /*----- Forecast -----*/
+    section #forecast-box {
+        display: grid;
+        text-align: center;
+        color: #00001e;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        background-color: #ffa60033;
+    }
+
+    #forecast-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 15px;
+        margin: auto;
+        width: 600px;
+    }
+
+    .weather-images img {
+        height: 100px;
+    }
+
+    /*----- Location -----*/
+
+    #map {
+        display: block;
+        padding: 15px;
+        margin: auto;
+    }
+
+    #map-pic {
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    #google-maps {
+        display: block;
+        max-width: 100%;
+        height: 580px;
+        padding: 15px;
+    }
+
+    /*Imagen dentro del articulo*/
+    #store-image {
+        height: 350px;
+        float: left;
+        padding: 2%;
+    }
+}
