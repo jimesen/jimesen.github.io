@@ -44,6 +44,15 @@ header h1,
     color: #D3D3D3;
 }
 
+/*----- Subtitulo -----*/
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 5px #777;
+    margin: 0;
+    font-size: 2rem;
+    padding-top: 5%;
+}
+
 /*----- Banner at the top -----*/
 #pancakebanner {
     background-color: #FFA500;
@@ -54,6 +63,7 @@ header h1,
 }
 
 /*----- Nav Menu -----*/
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -96,14 +106,12 @@ nav ul.hide {
     display: none;
 }
 
+/*----- StormCenter Website -----*/
 /*----- Form -----*/
-
 body {
-    font-family: Ububtu, sans-serif;
-    font-weight: 300;
-    font-size: 12px;
     line-height: 30px;
     color: rgb(5, 5, 5);
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -132,15 +140,14 @@ body {
 #contact h3 {
     color: #00001e;
     display: block;
-    font-size: 1.5rem;
-    font-weight: 400;
     text-align: center;
     margin: 0 0 10px;
 }
 
 #contact legend {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding-top: 7%;
 }
 
 fieldset {
@@ -151,15 +158,10 @@ fieldset {
     width: 100%;
 }
 
-label {
-    font-size: 1rem;
-}
-
 form label.top input,
 form label.top select,
 form label.top textarea {
     display: block;
-    font-size: 1rem;
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
@@ -242,8 +244,138 @@ form label.top textarea {
     color: #888;
 }
 
+/*----- Gallery Website -----*/
+/*----- Images Small View -----*/
+.caption {
+    font-family: 'Ubuntu', sans-serif;
+    color: #00001e;
+    text-align: center;
+}
 
-/*----- Slider-----*/
+.lazy-load {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 0px;
+}
+
+.lazy-load--item {
+    border: 5px solid rgb(228, 235, 238);
+    border-radius: 2px;
+    filter: blur(0em);
+    transition: filter 1s;
+    margin: auto;
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
+/*----- Preston WebSite -----*/
+/*----- Imagen Principal -----*/
+.herodiv img {
+    max-width: 100%;
+    box-shadow: 0 0 25px #00001e;
+}
+
+/*----- Cuadro Flotante -----*/
+/*posicion del cuadro flotante*/
+.herodiv {
+    position: relative;
+}
+
+/*Transparencia del cuadro flotante*/
+.stats {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: radial-gradient(#FFA500, #00001e41);
+    box-shadow: 0 0 25px #00001e;
+    opacity: .8;
+
+}
+
+/*Titulo dentro del cuadro*/
+.stats h3 {
+    text-align: center;
+    text-shadow: 3px 3px 5px #777;
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*Info dentro del cuadro*/
+.stats p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: left;
+}
+
+/*----- Forecast -----*/
+section #forecast-box {
+    display: none;
+}
+
+/*----- Article -----*/
+#article {
+    margin: 20px;
+    margin-top: auto;
+}
+
+/*Imagen dentro del articulo*/
+#store-image {
+    display: block;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+/*----- Location -----*/
+#google-maps {
+    display: none;
+}
+
+#google-maps h2,
+h3 {
+    color: #00001e;
+}
+
+/*----- IndexWebsite-----*/
+/*----- Index Page -----*/
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #00001e;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+div.Town{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    text-align: center;
+ }
+ div.Town section{
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffa60067;
+    margin-top: 1em;
+    margin-bottom: 1em;
+ }
+ div.citiesData p:nth-of-type(1){
+    font-family: 'Ubuntu', sans-serif;
+ }
+ div.Town img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+ 
+ }
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

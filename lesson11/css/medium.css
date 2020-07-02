@@ -1,11 +1,11 @@
-@media only screen and (min-width: 60em) {
-
+@media only screen and (min-width: 37.5em) {
     /*----- Structure Template -----*/
-
     main {
-        max-width: 950px;
-        margin: auto;
+        max-width: 650px;
+    }
 
+    header {
+        justify-content: center;
     }
 
     /*----- Nav Menu -----*/
@@ -32,8 +32,7 @@
     }
 
     nav ul {
-        margin-left: 25%;
-
+        margin-left: 3%;
     }
 
     nav ul li {
@@ -47,25 +46,46 @@
         color: #FFA500;
     }
 
-/*----- Index Page -----*/
-div.Town{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
- }
- div.Town section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-    margin-bottom: 1em;
- }
- 
- section:nth-child(even) img{
-    grid-column: 2;
- }
- section:nth-child(even) .townData{
-    grid-column: 1;
-    grid-row: 1;
- }
+    /*----- Preston Website -----*/
+    /*----- Forecast -----*/
+    #forecast-box {
+         display: grid;
+         grid-template-columns: auto auto auto auto auto;
+         padding: 20px;
+         margin: auto;
+    }
+    
+    #forecast-box h3 {
+        padding: 15px;
+    }
+
+
+     /*----- Index WebSite -----*/
+    /*----- Index Page -----*/
+
+    div.Town section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    div.townData p:nth-of-type(1){
+        font-size: 0.85rem;
+    }
+    section:nth-child(even) img{
+        grid-column: 1;
+    }
+    section:nth-child(even) .citiesData{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    /*----- Gallery Webstie -----*/
+    /*----- Images Medium View -----*/
+    .lazy-load {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
 }
