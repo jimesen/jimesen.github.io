@@ -43,45 +43,45 @@
          <fieldset>
         <legend>Reporter's Information</legend>
         <label class="top">Name
-        <input placeholder="Your name" type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+        <input placeholder="Your Name" type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
         <label class="top">Email Address
-        <input placeholder="Your Email Address" type="email" name="email" placeholder="demo@Weatherability.com"></label>
+        <input placeholder="demo@weatherability.com" type="email" name="email"></label>
         <label class="top">Phone Number
-        <input placeholder="Your Phone Number" type="tel" name="phone" placeholder="123-456-7890" required></label>
+        <input placeholder="123-456-7890" type="tel" name="phone" required></label>
         <label class="top">Zip Code
-        <input placeholder="Zip Code" input type="number" name="zip" required></label>
+        <input placeholder="Zip Code" type="number" name="zip" required></label>
       </fieldset>
       <fieldset>
         <legend>Storm Information</legend>
         <label class="top">Storm Date <input type="date" name="completeDate"></label>
-        <label class="top">Storm Type
-          <input type="text" id="StormType" list="stormtypes">
-          <datalist id="stormtypes">
-            <option value="Flash flood">
-            <option value="Hail">
-            <option value="Hurricane">
-            <option value="Thunderstorm">
-            <option value="Tornado">
-          </datalist>
+
+        <label class="top" for="storm-type">Storm Type
+          <select name="type-of-storm" id="storm-type">
+            <option value="" disabled selected>Select Region</option>
+            <option value="Flash Flood">Flash Flood</option>
+            <option value="Hail">Hail</option>
+            <option value="Hurricane">Hurricane</option>
+            <option value="Thunderstorm">Thunderstorm</option>
+            <option value="Tornado">Tornado</option>
+          </select>
         </label>
+
           <label class="top">Storm Severity:  
             <span id="ratingvalue">5</span>
           </label>
-          <div>
           <input class="slider" id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-          </div>
         
-      </div>
-        <label class="top">Storm Region
-          <select name="region">
-            <option value="">Select Region</option>
+        <label class="top" for="area">Storm Region
+          <select name="region" id="area">
+            <option value="" disabled selected>Select Region</option>
             <option value="fish haven">Fish Haven</option>
             <option value="preston">Preston</option>
             <option value="soda spring">Soda Springs</option>
           </select>
         </label>
       </fieldset>
+
       <fieldset>
         <legend>Danger and Additional Information</legend>
         <div>User In Danger?</div>
@@ -106,7 +106,5 @@
   <script src="js/storm.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfotload.js"></script>
-  <script src="js/lazyload.js"></script>
 </body>
-
 </html>
