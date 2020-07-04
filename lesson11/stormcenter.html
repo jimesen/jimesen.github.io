@@ -36,25 +36,25 @@
     </ul>
   </nav>
 
-  <div class="container">
-    <form id="contact" method="post">
+  <main>
+    <form  class="container" id="contact" method="GET" action="thanks.html">
       <h2>Storm Center</h2>
-      <fieldset>
+         <fieldset>
         <legend>Reporter's Information</legend>
         <label class="top">Name
-        <input placeholder="Your name" type="text" tabindex="1" required autofocus></label>
+        <input placeholder="Your name" type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
         <label class="top">Email Address
-        <input placeholder="Your Email Address" type="email" tabindex="2" required></label>
+        <input placeholder="Your Email Address" type="email" name="email" placeholder="demo@Weatherability.com"></label>
         <label class="top">Phone Number
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required></label>
+        <input placeholder="Your Phone Number" type="tel" name="phone" placeholder="123-456-7890" required></label>
         <label class="top">Zip Code
-        <input placeholder="Zip Code" type="number" tabindex="4" required></label>
+        <input placeholder="Zip Code" input type="number" name="zip" required></label>
       </fieldset>
       <fieldset>
         <legend>Storm Information</legend>
         <label class="top">Storm Date <input type="date" name="completeDate"></label>
         <label class="top">Storm Type
-          <input type="text" list="stormtypes">
+          <input type="text" id="StormType" list="stormtypes">
           <datalist id="stormtypes">
             <option value="Flash flood">
             <option value="Hail">
@@ -64,7 +64,7 @@
           </datalist>
         </label>
         <label class="top">Storm Severity = <span id="ratingvalue">5</span>
-          <input id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
+          <input  id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         </label>
         <label class="top">Storm Region
@@ -87,13 +87,11 @@
         <label class="top">Additional Information
         <textarea placeholder="Additional Info" tabindex="5" required></textarea></label>
       </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-      </fieldset>
+        <input type="submit" name="submit" value="Report Your Weather" class="submit">
     </form>
 
 
-  </div>
+  </main>
   <footer>
     <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
     Today's Date: <span id="today"></span>
