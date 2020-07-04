@@ -1,9 +1,8 @@
-@media (min-width: 42em) {
+@media (min-width: 710px) {
     /*----- Structure Template -----*/
     main {
         max-width: 650px;
     }
-
     header {
         justify-content: center;
     }
@@ -42,34 +41,7 @@
         color: #FFA500;
     }
 
-    /*----- Preston Website -----*/
-    
-
-      /*----- Location -----*/
-
-      #map {
-        padding: 15px;
-        margin: auto;
-    }
-
-    .map-pic {
-        margin-top: 0;
-        margin: auto;
-        display: flex;
-    }
-
-    #google-maps {
-        display: block;
-        width: 50%;
-    }
-
-    #map-info {
-        width: 50%;
-    }
-
-
-
-     /*----- Index WebSite -----*/
+    /*----- Index WebSite -----*/
     /*----- Index Page -----*/
 
     div.Town section{
@@ -96,5 +68,67 @@
     }
 
 
+    /*Preston Website*/
+    /*Transparencia del cuadro flotante*/
+    .stats {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    /*Titulo dentro del cuadro*/
+    .stats h3 {
+        font-size: 1.6rem;
+    }
+
+    /*----- Forecast -----*/
+    #forecast {
+        display: grid;
+        text-align: center;
+        color: #00001e;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+    }
+
+    #forecast-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 15px;
+        margin: auto;
+        width: 600px;
+    }
+
+    .weather-images img {
+        height: 100px;
+    }
+
+    /*----- Location -----*/
+
+    #map {
+        padding: 15px;
+        margin: auto;
+    }
+
+    .map-pic {
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    #google-maps {
+        display: block;
+        width: 50%;
+    }
+
+    #map-info {
+        width: 50%;
+    }
+
+    /*Imagen dentro del articulo*/
+    #store-image {
+        height: 350px;
+        float: left;
+        padding: 2%;
+    }
 
 }
