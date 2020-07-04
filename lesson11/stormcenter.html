@@ -69,9 +69,10 @@
           <label class="top">Storm Severity:  
             <span id="ratingvalue">5</span>
           </label>
+          <label>
           <input class="slider" id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-        
+          </label>
         <label class="top" for="area">Storm Region
           <select name="region" id="area">
             <option value="" disabled selected>Select Region</option>
@@ -88,9 +89,9 @@
         <label><input type="radio" name="danger" id="danger1" value="Yes"> Yes</label>
         <label><input type="radio" name="danger" id="danger2" value="No"> No</label>
         <label><input type="radio" name="danger" id="danger3" value="Maybe"> Maybe</label>
-      </fieldset>
-      <fieldset>
+        <div>
         <label class="top">Additional Information
+        </div>
         <textarea placeholder="Additional Info" tabindex="5" required></textarea></label>
       </fieldset>
         <input type="submit" name="submit" value="Report Your Weather" class="submit">
