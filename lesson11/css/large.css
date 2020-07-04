@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media (min-width: 55em) {
     /*----- Structure Template -----*/
 
     main {
@@ -30,7 +30,8 @@
     }
 
     nav ul {
-        margin-left: 25%;
+        margin: auto;
+        width: fit-content;
 
     }
 
@@ -83,7 +84,6 @@
         position: absolute;
         top: 10px;
         left: 30px;
-        padding: 1%;
     }
 
     /*Titulo dentro del cuadro*/
@@ -91,19 +91,13 @@
         font-size: 1.6rem;
     }
 
-    /*Info dentro del cuadro*/
-    .stats p {
-        font-size: 1rem;
-    }
-
     /*----- Forecast -----*/
-    section #forecast-box {
+    #forecast {
         display: grid;
         text-align: center;
         color: #00001e;
         font-family: 'Ubuntu', sans-serif;
         font-size: 1rem;
-        background-color: #ffa60033;
     }
 
     #forecast-box {
@@ -121,12 +115,11 @@
     /*----- Location -----*/
 
     #map {
-        display: block;
         padding: 15px;
         margin: auto;
     }
 
-    #map-pic {
+    .map-pic {
         margin-top: 0;
         margin: auto;
         display: flex;
@@ -134,9 +127,11 @@
 
     #google-maps {
         display: block;
-        max-width: 100%;
-        height: 580px;
-        padding: 15px;
+        width: 50%;
+    }
+
+    #map-info {
+        width: 50%;
     }
 
     /*Imagen dentro del articulo*/

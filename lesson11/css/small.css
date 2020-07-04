@@ -51,6 +51,7 @@ h2 {
     margin: 0;
     font-size: 2rem;
     padding-top: 5%;
+    padding-bottom: 1%;
 }
 
 /*----- Banner at the top -----*/
@@ -294,6 +295,7 @@ img {
     background: radial-gradient(#FFA500, #00001e41);
     box-shadow: 0 0 25px #00001e;
     opacity: .8;
+    padding: 5px;
 
 }
 
@@ -303,19 +305,18 @@ img {
     text-shadow: 3px 3px 5px #777;
     color: #fff;
     margin: 0;
-    font-size: 1rem;
 }
 
 /*Info dentro del cuadro*/
 .stats p {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.8rem;
     color: #fff;
     text-align: left;
+    margin: 5px;
 }
 
 /*----- Forecast -----*/
-section #forecast-box {
+#forecast {
     display: none;
 }
 
@@ -341,6 +342,10 @@ section #forecast-box {
 h3 {
     color: #00001e;
 }
+
+#map-info {
+    text-align: center;
+    }
 
 /*----- IndexWebsite-----*/
 /*----- Index Page -----*/

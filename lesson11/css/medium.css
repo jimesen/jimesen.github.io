@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media (min-width: 42em) {
     /*----- Structure Template -----*/
     main {
         max-width: 650px;
@@ -31,10 +31,6 @@
         display: block;
     }
 
-    nav ul {
-        margin-left: 3%;
-    }
-
     nav ul li {
         float: left;
     }
@@ -47,17 +43,30 @@
     }
 
     /*----- Preston Website -----*/
-    /*----- Forecast -----*/
-    #forecast-box {
-         display: grid;
-         grid-template-columns: auto auto auto auto auto;
-         padding: 20px;
-         margin: auto;
-    }
     
-    #forecast-box h3 {
+
+      /*----- Location -----*/
+
+      #map {
         padding: 15px;
+        margin: auto;
     }
+
+    .map-pic {
+        margin-top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    #google-maps {
+        display: block;
+        width: 50%;
+    }
+
+    #map-info {
+        width: 50%;
+    }
+
 
 
      /*----- Index WebSite -----*/
