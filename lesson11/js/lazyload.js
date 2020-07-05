@@ -1,3 +1,5 @@
+// LazyLoad
+
 const options = {
     lazyParentClass: '.lazy-load--item',
     lazyItemClass: 'img'
@@ -27,5 +29,3 @@ const options = {
   lazyLoadParents.forEach(item => {
     lazyLoad.observe(item)
   })
-  
-  

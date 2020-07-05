@@ -30,7 +30,7 @@
 	  <ul id="primaryNav" class="hide">
 		  <li><a href=/lesson11/index.html>Home </a></li> 
 		  <li><a href=/lesson11/preston.html>Preston</a></li>
-		  <li><a href=/lesson11/sodasprings.html class="active">&#10140; Soda Springs</a></li>
+		  <li class="active"><a href=/lesson11/sodasprings.html>&#10140; Soda Springs</a></li>
 		  <li><a href=/lesson11/fishhaven.html>Fish Haven</a></li> 
 		  <li><a href=/lesson11/stormcenter.html>Storm Center</a></li> 
 		  <li><a href=/lesson11/gallery.html>Gallery</a></li> 
@@ -40,53 +40,56 @@
 	<main>
        <h2>Soda Springs</h2>
        <div class="herodiv">
-           <img src="images/weather.jpg" alt="Image" sizes="100vw" srcset="images/small.jpg 400w,
+		   <img src="images/weather.jpg" alt="Image" sizes="100vw" srcset="images/small.jpg 400w,
               images/medium.jpg 800w,
-              images/large.jpg 1100w">
+              images/sodasprings.jpg 1100w">
 			  
-           <section class="stats">
-               <h3>Soda Springs</h3>
-               <p>Currently: <span id="desc"></span></p>
-               <p>Humidity: <span id="humidity"></span>%</p>
-               <p>High: <span id="highTemp"></span>°F</p>
-               <p>Wind Speed: <span id="windSpeed"></span>mph</p>
-               <p>Current Temp: <span id="currentTemp"></span>°F</p>
-               <p>Wind Chill: <span id="windChill"></span>
-           </div>
+			  <section class="stats">
+				<h3>Summary</h3>
+				<p>Currently: <span id="current"></span></p>
+				<p>Humidity: <span id="humidity"></span>%</p>
+				<p>High: <span id="high"></span>°F</p>
+				<p>Wind Speed: <span id="wS"></span> mph</p>
+				<p>Current Temp: <span id="cTemp"></span>°F</p>
+				<p>Wind Chill: <span id="wC"></span>
+			</section>
+		</div>
 
-	<section id="forecast">
-	<h2>5 Day Forecast</h2>
-	<div id="forecast-box">
-		<h3><span id='d1'></span>.</h3>
-		<h3><span id='d2'></span>.</h3>
-		<h3><span id='d3'></span>.</h3>
-		<h3><span id='d4'></span>.</h3>
-		<h3><span id='d5'></span>.</h3>
-		<div class="weather-images">
-			<img id="img1" src=# alt="ForecastIcon1">
-			<p><span id="tempD1"></span>°F</p>
-		</div>
-		<div class="weather-images">
-			<img id="img2" src=# alt="ForecastIcon2">
-			<p><span id="tempD2"></span>°F</p>
-		</div>
-		<div class="weather-images">
-			<img id="img3" src=# alt="ForecastIcon3">
-			<p><span id="tempD3"></span>°F</p>
-		</div>
-		<div class="weather-images">
-			<img id="img4" src=# alt="ForecastIcon4">
-			<p><span id="tempD4"></span>°F</p>
-		</div>
-		<div class="weather-images">
-			<img id="img5" src=# alt="ForecastIcon5">
-				<p><span id="tempD5"></span>°F</p>
-		</div>
+
+
+		<section id="forecast">
+			<h2>5 days forecast</h2>
+			<div id="forecast-box">
+				<h3><span id='day1'></span>.</h3>
+				<h3><span id='day2'></span>.</h3>
+				<h3><span id='day3'></span>.</h3>
+				<h3><span id='day4'></span>.</h3>
+				<h3><span id='day5'></span>.</h3>
+				<div class="weather-images">
+					<img id="imagesrc1" src="#" alt="ForecastIcon1">
+					<p><span id="forecast1"></span>°F</p>
+				</div>
+				<div class="weather-images">
+					<img id="imagesrc2" src="#" alt="ForecastIcon2">
+					<p><span id="forecast2"></span>°F</p>
+				</div>
+				<div class="weather-images">
+					<img id="imagesrc3" src="#" alt="ForecastIcon3">
+					<p><span id="forecast3"></span>°F</p>
+				</div>
+				<div class="weather-images">
+					<img id="imagesrc4" src="#" alt="ForecastIcon4">
+					<p><span id="forecast4"></span>°F</p>
+				</div>
+				<div class="weather-images">
+					<img id="imagesrc5" src="#" alt="ForecastIcon5">
+					<p><span id="forecast5"></span>°F</p>
+				</div>
 	</div>
 	</section>
 	<section id="article">
 		<h2>Weather</h2>
-		<img id="store-image" src="images/articlepic.jpg" alt="Articlepic">
+		<img id="store-image" src="images/2.jpg" alt="Articlepic">
 		<p>One of the first things you probably do every morning is look out the window to see
 			what
 			the weather is
@@ -174,3 +177,6 @@
  <script src="js/sodasprings.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
  <script src="js/webfotload.js"></script>
+</body>
+
+</html>

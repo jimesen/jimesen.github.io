@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weatherability</title>
+    <meta name="description" content="This site helps you to be prepared to face the weather">
+    <link rel="icon" href="/images/download.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pancakebanner" style="display:block;">
+        <span id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+            pavilion.</span>
+    </div>
+    <header>
+        <img class="logo" src="images/iconfinder_10_1208025.png" alt="Logo image">
+        <section class="header-text">
+            <h1>Weatherability</h1>
+            <div class="titulo">Helps you to be prepared to face the weather</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href=/lesson11/index.html>Home </a> </li> 
+            <li><a href=/lesson11/preston.html>Preston</a></li>
+            <li><a href=/lesson11/sodasprings.html>Soda Springs</a></li>
+            <li class="active"><a href=/lesson11/fishhaven.html>&#10140;Fish Haven</a></li>
+            <li><a href=/lesson11/stormcenter.html>Storm Center</a></li> 
+            <li><a href=/lesson11/gallery.html>Gallery</a></li> 
+        </ul> 
+    </nav> 
+    <main>
+        <h2>Fish Haven</h2>
+
+        <div class="herodiv">
+            <img src="images/weather.jpg" alt="Image" sizes="100vw" srcset="images/small.jpg 400w,
+                    images/medium.jpg 800w,
+                    images/fishhaven.jpg 1100w">
+
+                    <section class="stats">
+                        <h3>Summary</h3>
+                        <p>Currently: <span id="current"></span></p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>High: <span id="high"></span>°F</p>
+                        <p>Wind Speed: <span id="wS"></span> mph</p>
+                        <p>Current Temp: <span id="cTemp"></span>°F</p>
+                        <p>Wind Chill: <span id="wC"></span>
+                    </section>
+                </div>
+
+
+
+                <section id="forecast">
+                    <h2>5 days forecast</h2>
+                    <div id="forecast-box">
+                        <h3><span id='day1'></span>.</h3>
+                        <h3><span id='day2'></span>.</h3>
+                        <h3><span id='day3'></span>.</h3>
+                        <h3><span id='day4'></span>.</h3>
+                        <h3><span id='day5'></span>.</h3>
+                        <div class="weather-images">
+                            <img id="imagesrc1" src="#" alt="ForecastIcon1">
+                            <p><span id="forecast1"></span>°F</p>
+                        </div>
+                        <div class="weather-images">
+                            <img id="imagesrc2" src="#" alt="ForecastIcon2">
+                            <p><span id="forecast2"></span>°F</p>
+                        </div>
+                        <div class="weather-images">
+                            <img id="imagesrc3" src="#" alt="ForecastIcon3">
+                            <p><span id="forecast3"></span>°F</p>
+                        </div>
+                        <div class="weather-images">
+                            <img id="imagesrc4" src="#" alt="ForecastIcon4">
+                            <p><span id="forecast4"></span>°F</p>
+                        </div>
+                        <div class="weather-images">
+                            <img id="imagesrc5" src="#" alt="ForecastIcon5">
+                            <p><span id="forecast5"></span>°F</p>
+                        </div>
+             </div>
+             </section>
+             <section id="article">
+                 <h2>Weather</h2>
+                 <img id="store-image" src="images/3.jpg" alt="Articlepic">
+                 <p>One of the first things you probably do every morning is look out the window to see
+                     what
+                     the weather is
+                     like. Looking outside and listening to the day’s forecast helps you decide what
+                     clothes
+                     you will wear
+                     and maybe even what you will do throughout the day. If you don’t have school and the
+                     weather looks
+                     sunny, you might visit the zoo or go on a picnic. A rainy day might make you think
+                     about
+                     visiting a
+                     museum or staying home to read.</p>
+             
+                 <p>The weather affects us in many ways. Day-to-day changes in weather can influence how
+                     we
+                     feel and the way
+                     we look at the world. Severe weather, such as tornadoes, hurricanes, and blizzards,
+                     can
+                     disrupt many
+                     people’s lives because of the destruction they cause.</p>
+             
+                 <p>The term “weather” refers to the temporary conditions of the atmosphere, the layer of
+                     air
+                     that surrounds
+                     the Earth. We usually think of weather in terms of the state of the atmosphere in
+                     our
+                     own part of the
+                     world. But weather works like dropping a pebble in water—the ripples eventually
+                     affect
+                     water far away
+                     from where the pebble was dropped. The same happens with weather around the globe.
+                     Weather in your
+                     region will eventually affect the weather hundreds or thousands of kilometers away.
+                     For
+                     example, a
+                     snowstorm around Winnipeg, Manitoba, Canada, might eventually reach Chicago,
+                     Illinois,
+                     as it moves
+                     southeast through the U.S.</p>
+             
+                 <p>Weather doesn’t just stay in one place. It moves, and changes from hour to hour or
+                     day to
+                     day. Over many
+                     years, certain conditions become familiar weather in an area. The average weather in
+                     a
+                     specific region,
+                     as well as its variations and extremes over many years, is called climate. For
+                     example,
+                     the city of Las
+                     Vegas in the U.S. state of Nevada is generally dry and hot. Honolulu, the capital of
+                     the
+                     U.S. state of
+                     Hawaii, is also hot, but much more humid and rainy.</p>
+             
+                 <p>Climate changes, just like weather. However, climate change can take hundreds or even
+                     thousands of years.
+                     Today, the Sahara Desert in northern Africa is the largest desert in the world.
+                     However,
+                     several
+                     thousand years ago, the climate in the Sahara was quite different. This “Green
+                     Sahara”
+                     experienced
+                     frequent rainy weather. </p>
+             </section>
+             
+             <section id="map" class="map-pic">
+                 <div id="map-info">
+                     <h2>Weatherability</h2>
+                     <p> W 1st N St.</p>
+                     <p>Soda Springs, California</p>
+                     <p>(123) 123 - 1234</p>
+                 </div>
+                 <img id="google-maps" src="images/map.jpg" alt="Map">
+             </section>
+             <div class="stats-events">
+                 <div id="events"></div>
+             </div>
+             </main>
+             
+          <footer>
+              <p class="footerstyle"> &#169;<span id="year"></span> | Jeremy Mesen | San Jose, CR </p>
+              Today's Date: <span id="today"></span>
+          </footer>
+          <script src="js/structure.js"></script>
+          <script src="js/fishhaven.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js/webfotload.js"></script>
+         </body>
+         
+         </html>
+
+ 

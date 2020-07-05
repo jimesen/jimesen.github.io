@@ -22,3 +22,13 @@ if (d.getDay() == 5) {
 else {
     pancakebanner.setAttribute("style", "display: none"); 
 }
+
+  
+  
+  
+
+
+
+  
+
+

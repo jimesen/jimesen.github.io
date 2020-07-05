@@ -279,7 +279,7 @@ img {
 /*----- Preston WebSite -----*/
 /*----- Imagen Principal -----*/
 .herodiv img {
-    max-width: 100%;
+    width: 100%;
     box-shadow: 0 0 25px #00001e;
 }
 
@@ -290,6 +290,13 @@ img {
 }
 
 /*Transparencia del cuadro flotante*/
+.stats-events {
+    padding: 3%;
+    color: #00001e;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    box-shadow: 0 0 5px #00001e;
+}
 .stats {
     position: absolute;
     top: 10px;
