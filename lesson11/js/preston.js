@@ -42,7 +42,7 @@
                          p.textContent = event;
                          div1.appendChild(p);
                      });
-                     document.getElementById('events').appendChild(div1);
+                     document.getElementById('cityevents').appendChild(div1);
                  }
              });
          });
