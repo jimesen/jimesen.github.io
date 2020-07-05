@@ -334,12 +334,17 @@ img {
     margin: 20px;
     margin-top: auto;
 }
+#article p {
+    text-align: justify;
+}
 
 /*Imagen dentro del articulo*/
 #store-image {
     display: block;
     max-width: 100%;
     border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*----- Location -----*/
