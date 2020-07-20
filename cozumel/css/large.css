@@ -82,4 +82,27 @@ div.Rent{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/*----- Location -----*/
+
+#map {
+  padding: 15px;
+  margin: auto;
+}
+
+.map-pic {
+  margin-top: 0;
+  margin: auto;
+  display: flex;
+}
+
+#google-maps {
+  display: block;
+  width: 40%;
+  height: 350px;
+}
+
+#map-info {
+  width: 50%;
+}
+
 }

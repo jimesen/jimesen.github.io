@@ -336,3 +336,18 @@ div.Rent img{
   margin: 0 auto;
   padding-top: 2%;
 }
+
+
+/*----- Rent Website -----*/
+#google-maps {
+  display: none;
+}
+
+#google-maps h2,
+h3 {
+  color: #00001e;
+}
+
+#map-info {
+  text-align: center;
+  }
