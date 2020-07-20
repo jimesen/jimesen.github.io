@@ -179,57 +179,22 @@ nav #icon {
   display: none;
 } /* end of Responsive Nav and Logo */
 
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-
-
 /*----- StormCenter Website -----*/
 /*----- Form -----*/
-body {
-  line-height: 30px;
-  color: rgb(5, 5, 5);
-  font-family: 'Ubuntu', sans-serif;
-
-}
-.slider {
-  width: 320px;
-}
 
 .container {
   max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="number"],
-#contact textarea,
-#contact button[type="submit"] {
-  font-family: Ubuntu, sans-serif;
 }
 
 #contact {
-  background: rgba(255, 166, 0, 0.582);
+  background: #e09f7a13;
   padding: 25px;
-  margin: 50px auto;
+  margin: auto;
 }
 
 #contact h3 {
   color: #00001e;
-  display: block;
   text-align: center;
-  margin: 0 0 10px;
 }
 
 #contact legend {
@@ -255,8 +220,8 @@ form label.top textarea {
   padding: .75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem;
-  background-color: rgba(148, 139, 68, 0.1);
+  max-width: 80%;
+  background-color: white;
 }
 
 #contact input[type="text"],
@@ -264,7 +229,7 @@ form label.top textarea {
 #contact input[type="tel"],
 #contact input[type="number"],
 #contact textarea {
-  width: 100%;
+  max-width: 80%;
   border: 1px solid #CCC;
   background: #FFF;
   margin: 0 0 5px;
@@ -284,19 +249,27 @@ form label.top textarea {
 
 #contact textarea {
   height: 100px;
-  max-width: 100%;
+  max-width: 80%;
   resize: none;
 }
 
 .submit {
   cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #00001e;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
+  display: flex;
+  text-decoration: none;
+  border: 4px solid #D18A05;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  transition:backgrond .5s,color 1s;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin: auto;
+}
+
+.submit:hover {
+  background: #D18A05;
+  color: white;
 }
 
 #contact button[type="submit"]:hover {
@@ -330,4 +303,13 @@ form label.top textarea {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

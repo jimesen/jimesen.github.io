@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Cozumel Adventures/Home</title>
-  <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+  <title>Cozumel Adventures/Reservations</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <meta name="description" content="Discover Cozumel and plan your trip">
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
@@ -36,57 +36,57 @@
   </header>
   <main>
     <form  class="container" id="contact" method="GET" action="thanks.html">
-      <h2>Storm Center</h2>
+      <h2>Reservations</h2>
          <fieldset>
-        <legend>Reporter's Information</legend>
+        <legend>Personal Information</legend>
         <label class="top">Name
-        <input placeholder="Your Name" type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+        <input placeholder="Your Name" type="text" name="name" pattern="[A-Za-z] {5,}" required></label>
         <label class="top">Email Address
-        <input placeholder="demo@weatherability.com" type="email" name="email"></label>
+        <input placeholder="demo@cozumeladventures.com" type="email" name="email"></label>
         <label class="top">Phone Number
         <input placeholder="123-456-7890" type="tel" name="phone" required></label>
+        <label class="top">Country
+        <input placeholder="Country" type="text" name="country"></label>
         <label class="top">Zip Code
-        <input placeholder="Zip Code" type="number" name="zip" required></label>
+        <input placeholder="Zip Code" type="number" name="zip"></label>
+        <label class="top">Cruise line
+          <input placeholder="Cruise Line" type="text" name="cruiseline"></label>  
       </fieldset>
       <fieldset>
-        <legend>Storm Information</legend>
-        <label class="top">Storm Date <input type="date" name="completeDate"></label>
-
-        <label class="top" for="storm-type">Storm Type
+        <legend>Rental Information</legend>
+        <label class="top">Pick up Date <input type="date" name="completeDate"></label>
+        <label class="top">Drop off Date <input type="date" name="completeDate"></label>
+        <label class="top" for="rental-type">Rental Type
           <select name="type-of-storm" id="storm-type">
-            <option value="" disabled selected>Select Region</option>
-            <option value="Flash Flood">Flash Flood</option>
-            <option value="Hail">Hail</option>
-            <option value="Hurricane">Hurricane</option>
-            <option value="Thunderstorm">Thunderstorm</option>
-            <option value="Tornado">Tornado</option>
+            <option value="" disabled selected>Rental Type</option>
+            <option value="Flash Flood">Motor Scooter</option>
+            <option value="Hail">ATV Side-by-Side</option>
+            <option value="Hurricane">Jeep Rentals</option>
           </select>
         </label>
 
-          <label class="top">Storm Severity:  
-            <span id="ratingvalue">5</span>
-          </label>
-          <label>
-          <input class="slider" id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
-            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-          </label>
-        <label class="top" for="area">Storm Region
-          <select name="region" id="area">
-            <option value="" disabled selected>Select Region</option>
-            <option value="fish haven">Fish Haven</option>
-            <option value="preston">Preston</option>
-            <option value="soda spring">Soda Springs</option>
+          <label class="top" for="area">Vehicle
+          <select name="vehicle" id="area">
+            <option value="" disabled selected>Vehicle</option>
+            <option value="fish haven">Honda Metropolitan (49cc) - 1 person</option>
+            <option value="preston">Honda Dio (110cc) - 2 person</option>
+            <option value="soda spring">Honda PCX150 (149cc) - 2 person</option>
+            <option value="fish haven">Honda Pioneer 1000</option>
+            <option value="preston">4-door Jeep Wrangler - manual with A/C - 5 people max</option>
+            <option value="soda spring">2-door Jeep Wrangler - open air - manual - 4 people max</option>
           </select>
         </label>
       </fieldset>
 
       <fieldset>
-        <legend>Danger and Additional Information</legend>
-        <div>User In Danger?</div>
+        <legend>Special Accomodations</legend>
+        <div>Special accomodations required?</div>
         <label><input type="radio" name="danger" id="danger1" value="Yes"> Yes</label>
         <label><input type="radio" name="danger" id="danger2" value="No"> No</label>
-        <label><input type="radio" name="danger" id="danger3" value="Maybe"> Maybe</label>
-     
+        <div> 
+        <label class="top">SPecial Accomodation Details
+        <textarea placeholder="Additional Info" tabindex="5"></textarea></label>
+      </div>
       </fieldset>
         <input type="submit" name="submit" value="Report Your Weather" class="submit">
     </form>
