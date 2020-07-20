@@ -26,7 +26,6 @@ h2 {
 }
 
 footer {
-  font-family: 'Ubuntu', sans-serif;
   background: rgb(209,138,5);
   background: radial-gradient(circle, rgba(209,138,5,1) 0%, rgba(170,53,9,0.8069728135394783) 100%);
   padding: 1rem;
@@ -40,8 +39,6 @@ footer {
   display: inline-block;
   font-size: 30px;
   padding: 5px 5px;
-  color: aqua;
-  border: 1px solid white;
   border-radius: 50%;
   transition: .5s;
 }
@@ -82,12 +79,11 @@ footer {
 }
 
 .caja section h2 {
-  color: white;
-  font-family: Montserrat;
+  color: black;
 }
 
 .caja section li {
-  color: white;
+  color: black;
   text-align: center;
   padding: 1%;
 }
@@ -96,7 +92,7 @@ footer {
   margin: 0.5rem;
   border: 1px solid #00001e;
   padding: 0 1rem;
-  background-color: #FFA500;
+  background-color: #58555515;
 }
 
 .picture {
@@ -158,7 +154,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: black;
   font-size: 18px;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -179,15 +175,14 @@ nav #icon {
   display: none;
 } /* end of Responsive Nav and Logo */
 
-/*----- StormCenter Website -----*/
-/*----- Form -----*/
+/*----- Reservations Form -----*/
 
 .container {
   max-width: 400px;
 }
 
 #contact {
-  background: #e09f7a13;
+  background: #58555515;
   padding: 25px;
   margin: auto;
 }
@@ -316,8 +311,7 @@ form label.top textarea {
 
 
 
-/*----- IndexWebsite-----*/
-/*----- Index Page -----*/
+/*----- Rent Website -----*/
 
 div.Rent{
   display: grid;

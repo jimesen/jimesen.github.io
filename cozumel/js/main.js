@@ -1,4 +1,4 @@
-//Menu
+//Menu Escondido
 $(document).ready(function(){
   $('#icon').click(function(){
     $('ul').toggleClass('show');
@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 
 
-//WindChill Fish Haven Site
+//Tabla del estado del tiempo
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&APPID=5fbe37b45777a8e16856c8c4c241f6e7";
 fetch(apiURL)
     .then((response) => response.json())
@@ -28,7 +28,7 @@ fetch(apiURL)
         }
     });
 
-//Forecast Code
+//Tabla del forecast de 5 dias
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.95&units=imperial&APPID=5fbe37b45777a8e16856c8c4c241f6e7';
 fetch(forecastURL)
     .then((response) => response.json())
@@ -56,8 +56,7 @@ fetch(forecastURL)
     });
 
 
-    // MainWebsite
-
+//Reservations Website
 const requestURL = 'https://jimesen.github.io/documents/data2.json';
 fetch(requestURL)
     .then(function (response) {
