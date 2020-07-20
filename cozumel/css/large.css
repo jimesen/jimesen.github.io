@@ -62,6 +62,10 @@
     color: #00001e;
 }
 
+#forecast p{
+  text-align: center;
+}
+
 #forecast-box {
     display: grid;
     grid-template-columns: auto auto auto auto auto;

@@ -35,101 +35,62 @@
     </nav>
   </header>
   <main>
+    <form  class="container" id="contact" method="GET" action="thanks.html">
+      <h2>Storm Center</h2>
+         <fieldset>
+        <legend>Reporter's Information</legend>
+        <label class="top">Name
+        <input placeholder="Your Name" type="text" name="name" pattern="[A-Za-z].{5,}" required></label>
+        <label class="top">Email Address
+        <input placeholder="demo@weatherability.com" type="email" name="email"></label>
+        <label class="top">Phone Number
+        <input placeholder="123-456-7890" type="tel" name="phone" required></label>
+        <label class="top">Zip Code
+        <input placeholder="Zip Code" type="number" name="zip" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date <input type="date" name="completeDate"></label>
 
-    <div class="herodiv">
-      <section class="stats">
-        <h3>Cozumel's Weather</h3>
-        <p>Weather: <span id="current"></span></p>
-        <p>Humidity: <span id="humidity"></span>%</p>
-        <p>High: <span id="high"></span>°F</p>
-        <p>Win S.: <span id="wS"></span> mph</p>
-        <p>Temp: <span id="cTemp"></span>°F</p>
-        <p>Wind Chill: <span id="wC"></span>
-      </section>
-    </div>
+        <label class="top" for="storm-type">Storm Type
+          <select name="type-of-storm" id="storm-type">
+            <option value="" disabled selected>Select Region</option>
+            <option value="Flash Flood">Flash Flood</option>
+            <option value="Hail">Hail</option>
+            <option value="Hurricane">Hurricane</option>
+            <option value="Thunderstorm">Thunderstorm</option>
+            <option value="Tornado">Tornado</option>
+          </select>
+        </label>
 
-    <img class="welcomeimage" src="images/weather.jpg" alt="Image" sizes="100vw" srcset="images/prestonsmall.jpg 400w,
-images/prestonmedium.jpg 800w,
-images/5.jpg 1100w">
+          <label class="top">Storm Severity:  
+            <span id="ratingvalue">5</span>
+          </label>
+          <label>
+          <input class="slider" id="stormSeverity" type="range" name="range" value="5" min="1" max="10"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+          </label>
+        <label class="top" for="area">Storm Region
+          <select name="region" id="area">
+            <option value="" disabled selected>Select Region</option>
+            <option value="fish haven">Fish Haven</option>
+            <option value="preston">Preston</option>
+            <option value="soda spring">Soda Springs</option>
+          </select>
+        </label>
+      </fieldset>
 
+      <fieldset>
+        <legend>Danger and Additional Information</legend>
+        <div>User In Danger?</div>
+        <label><input type="radio" name="danger" id="danger1" value="Yes"> Yes</label>
+        <label><input type="radio" name="danger" id="danger2" value="No"> No</label>
+        <label><input type="radio" name="danger" id="danger3" value="Maybe"> Maybe</label>
+     
+      </fieldset>
+        <input type="submit" name="submit" value="Report Your Weather" class="submit">
+    </form>
 
-    <section>
-      <h2>Welcome to Cozumel Adventures</h2>
-      <p>This owner-operator company caters to locals, walk-in tourists, enthusiasts, and cruise-based touring groups
-        and partnerships. The company has two physical rental locations on Cozumel.
-        One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel and the other is near the Terminal
-        Puerta Maya further south along the coast which caters to the cruise lines and patrons.</p>
-      <p>The company promotes friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs. The
-        overall goal of the website project is to promote the rental services for those customers that like to do their
-        homework before getting to the island and to provide information about the services, requirements, and rental
-        process. The website should reflect the fun and carefree attitude of the island and the ability to escape the
-        touristy western part of the island by exploring the vast coasts and inlets on the southern and eastern shores.
-      </p>
-    </section>
-
-    <section id="forecast">
-      <h2>5 days forecast</h2>
-      <div id="forecast-box">
-        <h3><span id='day1'></span>.</h3>
-        <h3><span id='day2'></span>.</h3>
-        <h3><span id='day3'></span>.</h3>
-        <h3><span id='day4'></span>.</h3>
-        <h3><span id='day5'></span>.</h3>
-        <div class="weather-images">
-          <img id="imagesrc1" src="#" alt="ForecastIcon1">
-          <p><span id="forecast1"></span>°F</p>
-        </div>
-        <div class="weather-images">
-          <img id="imagesrc2" src="#" alt="ForecastIcon2">
-          <p><span id="forecast2"></span>°F</p>
-        </div>
-        <div class="weather-images">
-          <img id="imagesrc3" src="#" alt="ForecastIcon3">
-          <p><span id="forecast3"></span>°F</p>
-        </div>
-        <div class="weather-images">
-          <img id="imagesrc4" src="#" alt="ForecastIcon4">
-          <p><span id="forecast4"></span>°F</p>
-        </div>
-        <div class="weather-images">
-          <img id="imagesrc5" src="#" alt="ForecastIcon5">
-          <p><span id="forecast5"></span>°F</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="boton">
-      <a href="/cozumel/reservations.html">Reserve Now</a>
-    </div>
-
-    <h2>Rental Information</h2>
-
-    <div class="caja">
-      <section>
-        <h2>Honda Scooter</h2>
-        <ol>
-          <li>&#8226; Dio (110cc) - 2 person</li>
-          <li>&#8226; PCX150 (149cc) - 2 person</li>
-          <li>&#8226; Metropolitan (49cc) - 1 person</li>
-        </ol>
-        <img class="picture" src="images/hondametropolitan.png" alt="FitsLaw">
-      </section>
-      <section>
-        <h2>ATV Side-by-Side</h2>
-        <ol>
-          <li>&#8226; Honda Pioneer 1000</li>
-        </ol>
-        <img class="picture" src="images/hondapioneer1000.png" alt="HierarchyLaw">
-      </section>
-      <section>
-        <h2>Jeep Rentals</h2>
-        <ol><li>&#8226; 4-door Wrangler - manual with A/C - 5 people max</li></ol>
-        <ol><li>&#8226; 2-door Wrangler - open air - manual - 4 people max</li></ol>
-        <picture>
-          <img class="picture" src="images/jeepwrangler.png" alt="HicksLaw">
-        </picture>
-      </section>
-    </div>
 
   </main>
   <footer>
@@ -141,8 +102,9 @@ images/5.jpg 1100w">
       </ul>
     </div>
   </footer>
+
   <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/cozumel/js/main.js"></script>
 
 
 </body>
