@@ -1,6 +1,6 @@
 // MainWebsite
 
-const requestURL = 'https://jimesen.github.io/documents/testing.json';
+const requestURL = 'https://jimesen.github.io/documents/rent3.json';
 fetch(requestURL)
   .then(function (response) {
     return response.json();

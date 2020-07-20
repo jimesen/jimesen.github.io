@@ -11,7 +11,7 @@
         },
         {
             "type": "Honda Dio Scooter",
-            "max": "2",
+            "max": 2,
             "rhd": "USD$30.00",
             "rfd": "USD$40.00",
             "whd": "USD$35.00",
@@ -20,7 +20,7 @@
         },
         {
             "type": "Honda PCX150 Scooter",
-            "max": "2",
+            "max": 2,
             "rhd": "USD$40.00",
             "rfd": "USD$50.00",
             "whd": "USD$45.00",
@@ -29,7 +29,7 @@
         },
         {
             "type": "Honda Pioneer ATV",
-            "max": "4",
+            "max": 4,
             "rhd": "USD$50.00",
             "rfd": "USD$70.00",
             "whd": "USD$60.00",
@@ -38,7 +38,7 @@
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
-            "max": "5",
+            "max": 5,
             "rhd": "USD$70.00",
             "rfd": "USD$100.00",
             "whd": "USD$85.00",
@@ -47,7 +47,7 @@
         },
         {
             "type": "Jeep Wrangler - 2 door",
-            "max": "4",
+            "max": 4,
             "rhd": "USD$60.00",
             "rfd": "USD$85.00",
             "whd": "USD$70.00",
