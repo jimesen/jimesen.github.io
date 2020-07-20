@@ -313,3 +313,40 @@ form label.top textarea {
   display: table;
   clear: both;
 }
+
+
+
+/*----- IndexWebsite-----*/
+/*----- Index Page -----*/
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #00001e;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+div.Town{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  text-align: center;
+}
+div.Town section{
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffa60067;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.citiesData p:nth-of-type(1){
+  font-family: 'Ubuntu', sans-serif;
+}
+div.Town img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+}
