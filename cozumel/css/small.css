@@ -1,0 +1,188 @@
+
+/*----------- Small Structure --------------*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* body rules */
+body {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+p {
+  font-size: 20px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  padding: 1%;
+}
+h2 {
+  padding-top: 3%;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  background: rgb(209,138,5);
+  background: radial-gradient(circle, rgba(209,138,5,1) 0%, rgba(170,53,9,0.8069728135394783) 100%);
+  padding: 1rem;
+  text-align: right;
+  color: #D3D3D3;
+}
+
+.wrapper li {
+  list-style: none;
+  margin: 5px 10px;
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 5px;
+  color: aqua;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.wrapper i:hover {
+  color: white;
+  border: 1px solid white;
+  transition: .5s;
+}
+
+
+/* Informacion Home Page */
+.welcomeimage {
+  display: block;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2%;
+}
+
+/*caja flotante*/
+.herodiv {
+  display: none;
+}
+
+
+/*----- Forecast -----*/
+#forecast {
+  display: none;
+}
+/* fin */
+
+/* Informacion de renta */
+.caja {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.caja section h2 {
+  color: white;
+  font-family: Montserrat;
+}
+
+.caja section li {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+.caja section {
+  margin: 0.5rem;
+  border: 1px solid #00001e;
+  padding: 0 1rem;
+  background-color: #FFA500;
+}
+
+.picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}/* fin */
+
+/* boton de Accion */
+.boton {
+  display: flex;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  width: 220px;
+  margin: auto;
+  }
+.boton a{ 
+  text-decoration: none;
+  border: 4px solid #D18A05;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  transition:backgrond .5s,color 1s;
+  font-family: Bungee Shade;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+
+}
+.boton a:hover{
+  background: #D18A05;
+  color: white;
+}
+
+/* Responsive Nav and Logo */
+.logo-box {
+  float: left;
+  margin-left: 20px;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: rgb(209,138,5);
+  background: radial-gradient(circle, rgba(209,138,5,1) 0%, rgba(170,53,9,0.8069728135394783) 100%);
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+a.active,a:hover {
+  border: 1px solid white;
+  transition: .5s;
+}
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+} /* end of Responsive Nav and Logo */
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

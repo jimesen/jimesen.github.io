@@ -1,0 +1,34 @@
+
+@media (max-width: 793px){
+  nav #icon{
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #267892;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    border: none;
+    color: #AA3509;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+
+}
