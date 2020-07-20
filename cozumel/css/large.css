@@ -105,4 +105,13 @@ div.Rent{
   width: 50%;
 }
 
+/*tour website*/
+.tour {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tour section:nth-child(3) {
+  grid-column: span 1;
+}
+
 }

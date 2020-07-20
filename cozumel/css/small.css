@@ -351,3 +351,36 @@ h3 {
 #map-info {
   text-align: center;
   }
+
+  /* Tour Website*/
+.tour {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tour section h2 {
+  color: black;
+}
+
+.tour section li {
+  color: black;
+  text-align: center;
+  padding: 1%;
+}
+
+.tour section {
+  margin: 0.5rem;
+  border: 1px solid #00001e;
+  padding: 0 1rem;
+  background-color: #58555515;
+}
+
+.picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}/* fin */
