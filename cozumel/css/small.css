@@ -7,6 +7,10 @@
   list-style: none;
 }
 
+a:link {
+  color: #585555;
+}
+
 /* body rules */
 body {
   font-family: Montserrat;
@@ -338,7 +342,6 @@ div.Rent img{
 }
 
 
-/*----- Rent Website -----*/
 #google-maps {
   display: none;
 }
