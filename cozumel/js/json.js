@@ -16,7 +16,7 @@ fetch(requestURL)
     .then(function (jsonObject) {
         const rents = jsonObject['rents'];
         rents.forEach(rent => {
-            if (rent.type == "Honda Metro Scooter" || rent.name == "Honda Pioneer ATV" || rent.name == "Jeep Wrangler - 2 door"){
+            if (rent.type == "Honda Metro Scooter" || rent.type == "Honda Pioneer ATV" || rent.type == "Jeep Wrangler - 2 door"){
                 let card = document.createElement('section')
                 let div = document.createElement('div')
                 let h2 = document.createElement('h2');
@@ -28,7 +28,7 @@ fetch(requestURL)
                 let link = document.createElement('a');
                 let textLink = document.createElement('p');
 
-                div.setAttribute('class', 'citiesData')
+                div.setAttribute('class', 'rentData')
                 h2.textContent = rent.type;
                 p1.textContent = rent.max;
                 p2.textContent = "Year Founded: " + rent.rhd;
