@@ -8,15 +8,15 @@ $(document).ready(function(){
 
 // MainWebsite
 
-const requestURL = 'https://jimesen.github.io/documents/data.json';
+const requestURL = 'https://jimesen.github.io/documents/data2.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        const rent = jsonObject['rent'];
-        rent.forEach(town => {
-            if (town.name == "Honda Metro Scooter" || town.name == "Honda Pioneer ATV" || town.name == "Jeep Wrangler - 2 door"){
+        const rents = jsonObject['rents'];
+        rents.forEach(rent => {
+            if (rent.type == "Honda Metro Scooter" || rent.name == "Honda Pioneer ATV" || rent.name == "Jeep Wrangler - 2 door"){
                 let card = document.createElement('section')
                 let div = document.createElement('div')
                 let h2 = document.createElement('h2');
@@ -29,13 +29,13 @@ fetch(requestURL)
                 let textLink = document.createElement('p');
 
                 div.setAttribute('class', 'citiesData')
-                h2.textContent = town.name;
-                p1.textContent = town.max;
-                p2.textContent = "Year Founded: " + town.rhd;
-                p3.textContent = "Population: " + town.rfd;
-                p4.textContent = "Annual Rain Fall: " + town.wfd;
-                image.setAttribute('src', `./images/${town.photo}`);
-                image.setAttribute('alt', town.name);
+                h2.textContent = rent.type;
+                p1.textContent = rent.max;
+                p2.textContent = "Year Founded: " + rent.rhd;
+                p3.textContent = "Population: " + rent.rfd;
+                p4.textContent = "Annual Rain Fall: " + rent.whd;
+                image.setAttribute('src', `./images/${rent.photo}`);
+                image.setAttribute('alt', rent.type);
 
                 div.appendChild(h2);
                 div.appendChild(p1);
@@ -45,7 +45,7 @@ fetch(requestURL)
                 card.appendChild(div);
                 card.appendChild(image);
 
-                document.querySelector('div.Town').appendChild(card);
+                document.querySelector('div.Rent').appendChild(card);
             }
         });
 
