@@ -1,0 +1,88 @@
+{
+  "rentaltype": [
+    {
+      "name": "Honda Metro Scooter",
+      "photo": "hondametropolitan.png",
+      "motto": "Honda Scooter",
+      "max": 1,
+      "reservations": [
+        "Half Day (3hrs) USD$20.00",
+        "Full Day USD$30.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$25.00",
+        "Full Day USD$30.00"
+	  ]
+    },
+   {
+      "name": "Honda Dio Scooter",
+      "photo": "hondadio.png",
+      "motto": "Honda Scooter",
+      "max": 2,
+      "reservations": [
+        "Half Day (3hrs) USD$30.00",
+        "Full Day USD$40.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$35.00",
+        "Full Day USD$45.00"
+	  ]
+    },
+   {
+      "name": "Honda PCX150 Scooter",
+      "photo": "hondapcx150.png",
+      "motto": "Honda Scooter",
+      "max": 2,
+      "reservations": [
+        "Half Day (3hrs) USD$40.00",
+        "Full Day USD$50.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$45.00",
+        "Full Day USD$55.00"
+	  ]
+    },
+   {
+      "name": "Honda Pioneer ATV",
+      "photo": "hondapioneer1000.png",
+      "motto": "Honda ATV",
+      "max": 4,
+      "reservations": [
+        "Half Day (3hrs) USD$50.00",
+        "Full Day USD$70.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$60.00",
+        "Full Day USD$80.00"
+	  ]
+    },
+   {
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "photo": "jeepwrangler.png",
+      "motto": "Jeep Wrangler",
+      "max": 5,
+      "reservations": [
+        "Half Day (3hrs) USD$70.00",
+        "Full Day USD$100.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$85.00",
+        "Full Day USD$125.00"
+	  ]
+    },
+   {
+      "name": "Jeep Wrangler - 2 door",
+      "photo": "jeepwrangler.png",
+      "motto": "Jeep Wrangler",
+      "max": 1,
+      "reservations": [
+        "Half Day (3hrs) USD$60.00",
+        "Full Day USD$85.00",
+	  ]
+	  "walkin": [
+        "Half Day (3hrs) USD$70.00",
+        "Full Day USD$00.00"
+	  ]
+    },
+    ]
+}
