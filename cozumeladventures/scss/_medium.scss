@@ -1,0 +1,30 @@
+  nav #icon{
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #585555ef;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+    color: white;
+  }
+  a.active,a:hover {
+    border: none;
+    color: black;
+  }
+
+  nav ul.show {
+    left: 0;
+  }

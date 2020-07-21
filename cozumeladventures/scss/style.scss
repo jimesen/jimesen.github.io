@@ -1,0 +1,11 @@
+@import "normalize";
+
+@import "small";
+
+@media (max-width: 793px){
+    @import "medium"
+}/*end of medium*/
+
+@media (min-width: 794px) {
+    @import "large"    
+}/*end of large*/

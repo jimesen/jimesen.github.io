@@ -1,0 +1,116 @@
+   label.logo {
+    font-size: 32px;
+    padding-left: 60px;
+}
+    nav ul {
+    margin-right: 20px;
+}
+    nav a {
+      font-size: 17px;  
+}
+  
+.caja {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.caja section:nth-child(3) {
+    grid-column: span 1;
+}
+
+/*----- Cuadro Flotante -----*/
+/*posicion del cuadro flotante*/
+.herodiv {
+    display: block;
+    position: relative;
+}
+/*Transparencia del cuadro flotante*/
+
+  .stats {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background: rgba(209, 138, 5, 0.336);
+    background: radial-gradient(circle, rgba(209,138,5,1) 0%, rgba(170,53,9,0.8209784157803747) 100%);
+    box-shadow: 0 0 25px #00001e;
+    opacity: .8;
+    
+  }
+  
+  /*Titulo dentro del cuadro*/
+  .stats h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 3px 3px 5px #777;
+    color: #fff;
+    margin: 25px;
+  }
+  
+  /*Info dentro del cuadro*/
+  .stats p {
+    color: #fff;
+    text-align: left;
+    margin: 5px;
+    padding: 2%;
+
+  }
+
+/*----- Forecast -----*/
+#forecast {
+
+    display: grid;
+    text-align: center;
+    color: #00001e;
+}
+
+#forecast p{
+  text-align: center;
+}
+
+#forecast-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 15px;
+    margin: auto;
+    width: 600px;
+}
+
+.weather-images img {
+    height: 50px;
+}
+
+div.Rent{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*----- Location -----*/
+
+#map {
+  padding: 15px;
+  margin: auto;
+}
+
+.map-pic {
+  margin-top: 0;
+  margin: auto;
+  display: flex;
+}
+
+#google-maps {
+  display: block;
+  width: 40%;
+  height: 350px;
+}
+
+#map-info {
+  width: 50%;
+}
+
+/*tour website*/
+.tour {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tour section:nth-child(3) {
+  grid-column: span 1;
+}
+
