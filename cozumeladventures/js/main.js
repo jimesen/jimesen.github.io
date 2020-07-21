@@ -57,7 +57,7 @@ fetch(forecastURL)
 
 
 //Reservations Website
-const requestURL = 'https://jimesen.github.io/documents/data2.json';
+const requestURL = 'https://jimesen.github.io/cozumeladventures/data/rental.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
